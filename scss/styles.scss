@@ -39,6 +39,9 @@
   .white {
     color: white;
   }
+  .list{
+      list-style-type: none;
+  }
   .black {
     background-color: black;
   }
@@ -151,10 +154,10 @@
     color: #c7c7c7;
   }
   .product_select {
-    border: 3px solid rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.24);
   }
   .product_select:hover {
-    border: rgb(240, 61, 29) solid 4px;
+    border: rgb(223, 193, 22) solid 1px;
   }
   .flip-flops:hover {
     background: linear-gradient(rgb(165, 0, 0), rgb(255, 134, 22));

@@ -36,6 +36,9 @@ html {
 .white {
   color: white; }
 
+.list {
+  list-style-type: none; }
+
 .black {
   background-color: black; }
 
@@ -146,10 +149,10 @@ hr {
   color: #c7c7c7; }
 
 .product_select {
-  border: 3px solid rgba(0, 0, 0, 0.24); }
+  border: 1px solid rgba(255, 255, 255, 0.24); }
 
 .product_select:hover {
-  border: #f03d1d solid 4px; }
+  border: #dfc116 solid 1px; }
 
 .flip-flops:hover {
   background: linear-gradient(#a50000, #ff8616);
