@@ -1,0 +1,232 @@
+/*                    FOOTER                    */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    height: 100%;
+  }
+  .footer {
+    background: linear-gradient(black, rgb(46, 46, 46));
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: auto;
+    flex-flow: row nowrap;
+    align-items: center; 
+  }
+  
+  .footer_text {
+    color: rgb(201, 201, 201);
+    font-size: 12px;
+    flex-grow: 1;
+    text-align: justify;
+  }
+  .footer_text:hover {
+    font-weight: 600;
+    color: white;
+  }
+  
+  .btn_social_footer {
+    color: rgb(201, 201, 201);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn_social_footer:hover{
+    color: white;
+  }
+  /*------------------------------------CSS NORMAL-----------------------*/
+  .white {
+    color: white;
+  }
+  .black {
+    background-color: black;
+  }
+  .menu_item {
+    color: black;
+    z-index: 1200;
+  }
+  .img_header {
+    max-width: 120px;
+    min-width: 80px;
+  }
+  .text_title {
+    color: black;
+    font-size: 20px;
+    background: none;
+  }
+  .nav_bar_title {
+    background: radial-gradient(rgb(245, 211, 102), rgb(187, 2, 2));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .agrandar {
+    width: 100%;
+  }
+  .nav_bar_close {
+    color: white;
+    background: #212529;
+    border: none;
+    -webkit-appearance: button;
+  }
+  hr {
+    margin-top: 30px;
+    width: 100%;
+    color: white;
+  }
+  .p {
+    color: black;
+    background: none;
+    font-size: 13px;
+  }
+  .bring_tofront {
+    z-index: 120;
+    opacity: 0.7;
+    background-color: white;
+  }
+  
+  .text-anim {
+    animation: cambio 10s infinite;
+    text-align: center;
+  }
+  .text-norm {
+    text-align: justify;
+    color: black;
+  }
+  #ir_aprod {
+    animation: cambiobg 8s infinite;
+  }
+  #ir_aprod .text_title {
+    animation: cambiobyw 8s infinite;
+  }
+  #ir_aprod .p {
+    animation: cambiobyw 8s infinite;
+  }
+  /* btn*/
+  .btn_txt {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .btn_nav {
+    color: white;
+    font-size: 1.4em;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .btn_search {
+    background: none;
+    color: rgba(0, 0, 0, 0.438);
+    font-size: 1.3em;
+    border: none;
+    position: relative;
+    margin-left: 40px;
+    z-index: 2;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .btn_social {
+    color: white;
+    background-color: red;
+    font-size: 1.2em;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+  }
+  
+  /*FORM SEARCH*/
+  .form_search {
+    border-radius: 10px;
+    margin-left: 5px;
+    position: absolute;
+    left: 60px;
+  }
+  .form_text {
+    padding-left: 30px;
+    color: #c7c7c7;
+  }
+  .product_select {
+    border: 3px solid rgba(0, 0, 0, 0.24);
+  }
+  .product_select:hover {
+    border: rgb(240, 61, 29) solid 4px;
+  }
+  .flip-flops:hover {
+    background: linear-gradient(rgb(165, 0, 0), rgb(255, 134, 22));
+    color: white;
+  }
+  body {
+    margin-bottom: 0px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  @keyframes cambio {
+    20% {
+      color: rgb(7, 0, 0);
+    }
+    40% {
+      color: red;
+    }
+    60% {
+      color: rgb(243, 151, 12);
+    }
+  
+    80% {
+      color: rgb(197, 18, 116);
+    }
+    100% {
+      color: rgb(146, 8, 31);
+    }
+  }
+  @keyframes cambiobyw {
+    25% {
+      color: white;
+    }
+    50% {
+      color: black;
+    }
+    75% {
+      color: white;
+    }
+    100% {
+      color: black;
+    }
+  }
+  @keyframes cambiobg {
+    25% {
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+    50% {
+      background-color: white;
+      color: black;
+    }
+    75% {
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+    100% {
+      background-color: white;
+      color: black;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .img_header {
+      max-width: 150px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .btn_nav_mobile {
+      display: none;
+    }
+  }
+  

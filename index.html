@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <title>Flip Flopinn</title>
+</head>
+
+<body>
+  
+ 
+  <header>
+    
+    <!----------------------------------NAV--------------------------------->
+
+    <!----------------------------------MOBILE & TABLET--------------------->
+    <nav class="navbar navbar-expand-md navbar-dark black sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="imagenes/Since 2021 (10).png" class="img-fluid img_header"></a>
+        <button class="btn_nav btn_nav_mobile" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="bi bi-list btn_nav  "></i></span>
+          
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="menu_item nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown autoClose">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Remeras</a></li>
+                <li><a class="dropdown-item" href="#">Buzos</a></li>
+                <li><a class="dropdown-item" href="#">Camperas</a></li>
+                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                <li><a class="dropdown-item" href="#">Gorras y Accesorios</a></li>
+                <li><a class="dropdown-item" href="#">Zapatillas</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item flip-flops" href="#">Ojotas y Chancletas</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="paginas/product.html">Ver todos los productos</a></li>
+              </ul>
+            </li>
+            <li class="menu_item nav-item">
+              <a class="nav-link" aria-current="page" href="paginas/contact.html">Contacto</a>
+            </li>
+            <li class="menu_item nav-item">
+              <a class="nav-link" aria-current="page" href="paginas/us.html">Nosotros</a>
+            </li>
+            <li class="menu_item nav-item">
+              <a class="nav-link" aria-current="page" href="paginas/your_design.html">Crea tu diseño</a>
+            </li>
+          </ul>
+    <!-- <hr>
+          <div>
+            <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-whatsapp btn_social"></i></a></button>
+            <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-facebook btn_social"></i></a></button>
+            <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-instagram btn_social"></i></a></button>
+            <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-twitter  btn_social"></i></a></button>
+          </div> -->
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid black sticky-top d-none d-lg-block">
+    <!----------------------------------DESKTOP-->
+      <nav class="navbar navbar-dark black fixed-top">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center">
+    <button class="btn_nav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span><i class="bi bi-justify-left btn_nav"></i></span>
+    </button>
+    <button class="btn_search" type="button"><i class="bi bi-search"></i> </button>
+    <form class="d-flex ms-3 form_search" >
+      <input class="form-control me-2 form_text" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-warning" type="submit">Buscar</button>
+    </form></div>
+    <a class="navbar-brand" href="index.html"><img src="imagenes/Since 2021 (10).png" class="img-fluid img_header"></a>
+    <!---------------------------------OFF CANVAS ------------------------------------------------------------>
+    <div class="offcanvas offcanvas-start navbar black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header d-flex justify-content-between agrandar">
+        <a class="navbar-brand" href="#"><img src="imagenes/Since 2021 (10).png" class="img-fluid img_header"></a>
+        <button type="button" class="btn" id="blanco" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg nav_bar_close" s"></i></button>
+      </div>
+      <div class="offcanvas-body black">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="menu_item nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item dropdown autoClose">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Remeras</a></li>
+              <li><a class="dropdown-item" href="#">Buzos</a></li>
+              <li><a class="dropdown-item" href="#">Camperas</a></li>
+              <li><a class="dropdown-item" href="#">Pantalones</a></li>
+              <li><a class="dropdown-item" href="#">Bermudas</a></li>
+              <li><a class="dropdown-item" href="#">Gorras y Accesorios</a></li>
+              <li><a class="dropdown-item" href="#">Zapatillas</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item flip-flops" href="#">Ojotas y Chancletas</a></li>
+            </ul>
+          </li>
+          <li class="menu_item nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contacto</a>
+          </li>
+          <li class="menu_item nav-item">
+            <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+          </li>
+          <li class="menu_item nav-item">
+            <a class="nav-link" aria-current="page" href="#">Crea tu diseño</a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" >
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-warning" type="submit">Buscar</button>
+        </form>
+  <hr>
+        <div>
+          <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-whatsapp btn_social"></i></a></button>
+          <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-facebook btn_social"></i></a></button>
+          <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-instagram btn_social"></i></a></button>
+          <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-twitter  btn_social"></i></a></button>
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+</div>
+      
+  </header>
+  <!----------------------------------------------------------------- CARRUSEL------------------------------------------------------------------------------------->
+
+
+  <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="20000">
+        <img src="imagenes/carrusel1.jpg" class="d-block w-100" alt="carousel1">
+        <div class="carousel-caption d-none d-sm-block d-md-block  bring_tofront mb-3 ">
+          <h1 class="text_title text-uppercase text-anim "">Las Mejores Ofertas</h1>
+                  <p class=" p">50% EN PRODUCTOS SELECCIONADOS</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="imagenes/carrusel2.jpg" class="d-block w-100" alt="carousel2">
+
+        <div class="carousel-caption d-sm-block d-md-block bring_tofront mb-3" id="ir_aprod">
+          <a href="paginas/product.html" class="text-decoration-none">
+            <h1 class="text_title text-uppercase ">Camperas y Abrigos</h1>
+            <p class=" p ">PARA EL INVIERNO Y LA PRIMAVERA</p>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="imagenes/carrusel3.jpg" class="d-block w-100" alt="carousel3">
+        <div class="carousel-caption d-none  d-sm-block d-md-block bring_tofront mb-3 mt-3">
+          <h1 class="text_title text-uppercase">Encontra tu estilo</h1>
+          <p class=" p">SENTITE VOS MISMO</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-------------------------------------------------------TEXTO Y OTRAS COSAS --------------------------------------------------------->
+  <div class="container-fluid">
+    <div class="row ">
+      <!-----------------------------MOBILE--------------------------------->
+      <div class="col-12 d-lg-none">
+        <p class="text-anim mt-3 bg-warning bg-gradient">Slogan// Would you turn your back on me?</p>
+      </div>
+      <div class="col-12 d-lg-none d-flex justify-content-center">
+
+        <div class=" col-4   ps-1 pe-1 pt-1 product_select"><a href=""
+            class="text-decoration-none text-norm d-flex flex-column align-items-center"><img src="imagenes/Ojota_Producto_2.png" alt="ojota"
+              class="img-fluid img-thumbnail">
+            <h6>product_title</h6>
+          </a></div>
+        <div class=" col-4  ms-1 ps-1 pe-1 pt-1 product_select"><a href=""
+            class="text-decoration-none text-norm  d-flex flex-column align-items-center"><img src="imagenes/Ojota_Producto_3.png" alt="ojota"
+              class="img-fluid img-thumbnail">
+            <h6>product_title</h6>
+          </a></div>
+        <div class="col-4  ms-1 ps-1 pe-1 pt-1 product_select"><a href=""
+            class="text-decoration-none text-norm  d-flex flex-column align-items-center"><img src="imagenes/Ojota_Producto_7.png" alt="ojota"
+              class="img-fluid img-thumbnail">
+            <h6>product_title</h6>
+          </a></div>
+
+      </div>
+      <div class="col-12 d-lg-none d-flex justify-content-around mt-4">
+        <div class="col-5 d-flex justify-content-center"><button type="button" class="btn btn-warning text-uppercase"><a href="paginas/product.html" class="text-decoration-none btn_txt">Elige tu estilo</a></button></div>
+        <div class="col-5 d-flex justify-content-center"><button type="button" class="btn btn-danger text-uppercase "><a href="paginas/product.html"      class="text-decoration-none btn_txt">Crea tu estilo</a></button></div>
+
+
+      </div>
+      <div class="mt-4">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit voluptates officiis itaque magnam repellendus quia voluptas nesciunt eius, cupiditate facere nihil quae, assumenda quod magni vero consequatur dolor tempora?
+        Sint autem non dignissimos odio libero doloremque nihil praesentium delectus in. Officiis non fugit ducimus quibusdam. Tempora dolore quasi eveniet minima non fuga ut consequatur incidunt perferendis! Aliquid, pariatur saepe.
+        Praesentium voluptatibus sint repellendus, nisi minima iusto repudiandae architecto exercitationem reiciendis temporibus facere, laboriosam officia cupiditate reprehenderit totam harum cumque officiis libero adipisci numquam itaque voluptatem magnam! Delectus, nulla voluptatum.
+        Atque at nisi iste ea minima amet eaque earum alias doloribus excepturi magnam sapiente cum, repudiandae voluptatem quod rem dignissimos ad sit eos necessitatibus, accusantium est libero quae corrupti? Repellat!</p>
+      </div>
+
+      <!------- MOBILE LANDSCAPE Y TABLET-->
+
+
+
+
+
+
+
+
+      <!------------------- TABLET LANDSCAPE Y DESKTOP-->
+      <div class="col-2 d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi ut rerum
+        voluptate odio voluptas sapiente rem possimus accusantium temporibus, a optio, expedita et? Reiciendis placeat
+        sed velit sint cum veritatis.</div>
+      <div class="col-10 d-none d-lg-block">
+        <p class="text-norm">Para pantallas grandes</p>
+        <p class="text-anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum obcaecati nemo velit
+          magnam, hic vero quasi, odit laudantium eos sequi nam ea. Distinctio suscipit qui non repudiandae! Eveniet,
+          facere quae?</p>
+      </div>
+
+
+
+
+      <div class="col-2 d-none d-lg-block">
+        <!-- <div class="border border-black border-3 p-2 mt-2 ms-4"><a href="" class="text-decoration-none text-norm"><img src="imagenes/Ojota_Producto_2.png" alt="ojota" class="img-fluid img-thumbnail"><h6>product_title</h6></a></div>
+              <div class=" border border-black border-3 p-2 mt-2 ms-4"><a href="" class="text-decoration-none text-norm"><img src="imagenes/Ojota_Producto_3.png" alt="ojota" class="img-fluid img-thumbnail"><h6>product_title</h6></a></div>
+              <div class=" border border-black border-3 p-2 mt-2 ms-4"><a href="" class="text-decoration-none text-norm"><img src="imagenes/Ojota_Producto_4.png" alt="ojota" class="img-fluid img-thumbnail"><h6>product_title</h6></a></div>
+              <div class=" border border-black border-3 p-2 mt-2 ms-4"><a href="" class="text-decoration-none text-norm"><img src="imagenes/Ojota_Producto_5.png" alt="ojota" class="img-fluid img-thumbnail"><h6>product_title</h6></a></div> -->
+      </div>
+    </div>
+  </div>
+  <!-- <div class="ir_aprod">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quam beatae dolor? Recusandae porro, impedit at quidem ut, quas blanditiis pariatur nihil non soluta consectetur unde voluptatibus minus, ullam odit.</p>
+</div> -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+    <!------------------------FOOTER ------------------------------->
+    <footer class="footer">
+      <div class="container-fluid ">
+      <div class="row mt-3 d-flex ">
+          
+       <!----------------------MOBILE FOOTER------------------------------->
+        <div class="col-6 d-md-none">
+          <p class="footer_text">Copyright&copy; 2008 - Página creada por Franco Minati - Todos los derechos reservados</p>
+          <a href="mailto:francominati2@gmail.com?Subject=Contacto%20con%20Franco%20pagina%20web" class="text-decoration-none" target="_blank"><p class="footer_text">francominati2@gmail.com</p></a>
+          <a href=""class="text-decoration-none"><p class="footer_text">Contacto</p></a>
+          <a href=""class="text-decoration-none"><p class="footer_text">Nosotros</p></a>
+        </div>
+        <div class="col-6 d-flex flex-wrap pe-2 d-md-none">
+          <div class="d-flex pe-2 agrandar flex-wrap justify-content-end">
+            <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-whatsapp btn_social"></i></a></button>
+            <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-facebook btn_social"></i></a></button>
+          </div>
+            <div class="d-flex pe-2 agrandar flex-wrap justify-content-end">
+              <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-instagram btn_social"></i></a></button>
+          <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-twitter  btn_social"></i></a></button>
+            </div>
+        </div>
+        <!----------------------DESKTOP Y TABLET FOOTER-->
+        <div class="col-5 d-none d-md-block">
+          <p class="footer_text">Copyright&copy; 2022 - Página creada por Franco Minati - Todos los derechos reservados</p>
+          <p class="footer_text"></p>
+          <p class="footer_text"></p>
+          <a href=""class="text-decoration-none"><p class="footer_text">Contacto</p></a>
+          <a href=""class="text-decoration-none"><p class="footer_text">Nosotros</p></a>
+        </div>
+        <div class="col-3 d-none d-md-block ps-5">
+          <a href="https://github.com/FrancoMinati" target="_blank" class="text-decoration-none"><p class="footer_text"><i class="bi bi-github btn_social_footer"></i></p></a>
+          <a href="mailto:francominati2@gmail.com?Subject=Contacto%20con%20Franco%20pagina%20web" class="text-decoration-none" target="_blank"><p class="footer_text">francominati2@gmail.com</p></a>
+          <a href="https://open.spotify.com/track/1AERsDlEADxcp9WtjZBtiU?si=8501cfa080d141f8" class="text-decoration-none" target="_blank"><p class="footer_text"><i class="bi bi-music-note-beamed btn_social_footer"></i></p></a>
+        </div>
+        <div class="col-4 d-flex flex-wrap pe-2 d-none d-md-block">
+          <div class="d-flex pe-2 agrandar flex-wrap justify-content-end">
+            <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-whatsapp btn_social"></i></a></button>
+            <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-facebook btn_social"></i></a></button>
+          </div>
+            <div class="d-flex pe-2 agrandar flex-wrap justify-content-end">
+              <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-instagram btn_social"></i></a></button>
+          <button class="btn "><a class="text-decoration-none" href=""><i class="bi bi-twitter  btn_social"></i></a></button>
+            </div>
+        </div>
+        
+
+
+      </div>
+
+
+      </div>
+    </footer>
+
+</body>
+
+</html>
