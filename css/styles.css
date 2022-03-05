@@ -1,4 +1,6 @@
 /*COLORS*/
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 /*                    FOOTER                    */
 * {
   padding: 0;
@@ -90,7 +92,8 @@ hr {
 
 .text-anim {
   animation: cambio 10s infinite;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Righteous', cursive; }
 
 .text-norm {
   text-align: justify;
