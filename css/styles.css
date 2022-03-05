@@ -114,6 +114,17 @@ hr {
   font-size: 16px;
   font-weight: bold; }
 
+.btn_txt_midpage {
+  font-family: 'Righteous', cursive;
+  color: black; }
+
+.btn {
+  padding: 20px; }
+
+.btn_txt_midpage:hover {
+  font-family: 'Righteous', cursive;
+  color: white; }
+
 .btn_nav {
   color: white;
   font-size: 1.4em;
