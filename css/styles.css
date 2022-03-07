@@ -206,7 +206,8 @@ body {
   background-color: white;
   padding: 10px 16px;
   width: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 0.5px #E5E7E9 solid; }
 
 .active_p {
   border: 0.5px #E5E7E9 solid;

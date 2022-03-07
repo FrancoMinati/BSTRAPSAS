@@ -233,6 +233,7 @@ $color-base:rgb(0,0,0);
   padding: 10px 16px;
   width: 100%;
   cursor: pointer;
+  border: 0.5px $color-border solid;
 }
 
 .active_p{
