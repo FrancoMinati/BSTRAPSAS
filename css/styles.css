@@ -1,6 +1,20 @@
 /*COLORS*/
+/* TXT */
+/* BUTTONS */
 /*FONTS*/
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.img-prod {
+  border-radius: 80px; }
+
+.txt-title, .txt-title-s {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Righteous"; }
+
+.txt-title-s {
+  font-size: 17px; }
+
 /*                    FOOTER                    */
 * {
   padding: 0;
@@ -106,7 +120,8 @@ hr {
 
 .text-norm {
   text-align: justify;
-  color: black; }
+  color: black;
+  font-size: 14px; }
 
 #ir_aprod {
   animation: cambiobg 8s infinite; }
@@ -126,9 +141,6 @@ hr {
 .btn_txt_midpage {
   font-family: 'Righteous', cursive;
   color: black; }
-
-.btn {
-  padding: 20px; }
 
 .btn_txt_midpage:hover {
   font-family: 'Righteous', cursive;
@@ -190,7 +202,6 @@ hr {
 
 body {
   margin-bottom: 0px;
-  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -218,7 +229,7 @@ body {
   padding: 3px 0; }
 
 .text-prod:hover {
-  color: #34495E; }
+  color: #0000FF; }
 
 .text-special {
   color: #EAECEE;
@@ -281,8 +292,12 @@ body {
 
 @media screen and (min-width: 1024px) {
   .img_header {
-    max-width: 150px; } }
+    max-width: 150px; }
+  .img-prod {
+    border-radius: 20%; } }
 
 @media screen and (min-width: 768px) {
   .btn_nav_mobile {
-    display: none; } }
+    display: none; }
+  .img-prod {
+    border-radius: 80px; } }

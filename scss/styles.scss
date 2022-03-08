@@ -1,5 +1,5 @@
 /*COLORS*/
-$color-select:#FFCC00;
+$color-select:#0000FF;
 $color-select-secondary:#F4F6F6;
 $color-hover:#E74C3C;
 $color-bg-dark:#1C2833;
@@ -7,11 +7,36 @@ $color-text-white:#EAECEE;
 $color-href:#34495E;
 $color-border:#E5E7E9;
 $color-base:rgb(0,0,0);
+
+/* TXT */
+$txt-title:25px;
+$txt-title-secondary:17px;
+$txt-base:14px;
+$txt-bold:600;
+$font-title:'Righteous';
+
+/* BUTTONS */
+
 /*FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-
-
+@mixin txt-title{
+color: $color-base;
+font-size: $txt-title;
+font-weight: $txt-bold;
+font-family: $font-title;
+}
+.img-prod{
+  border-radius: 80px;
+}
+.txt-title{
+  @include txt-title();
+}
+.txt-title-s{
+  @extend .txt-title;
+  font-size: $txt-title-secondary;
+  
+}
 /*                    FOOTER                    */
 * {
   padding: 0;
@@ -109,6 +134,7 @@ $color-base:rgb(0,0,0);
     color: white;
   }
   /* */
+  
   .p {
     color: $color-base;
     background: none;
@@ -128,6 +154,8 @@ $color-base:rgb(0,0,0);
   .text-norm {
     text-align: justify;
     color: $color-base;
+    font-size: $txt-base;
+    
   }
   #ir_aprod {
     animation: cambiobg 8s infinite;
@@ -139,6 +167,7 @@ $color-base:rgb(0,0,0);
     animation: cambiobyw 8s infinite;
   }
   /* btn*/
+  
   .btn_txt {
     color: white;
     font-size: 16px;
@@ -148,9 +177,7 @@ $color-base:rgb(0,0,0);
     font-family: 'Righteous', cursive;
     color: black;
   }
-  .btn{
-    padding: 20px;
-  }
+  
   .btn_txt_midpage:hover{
     font-family: 'Righteous', cursive;
     color: white;
@@ -215,7 +242,7 @@ $color-base:rgb(0,0,0);
   }
   body {
     margin-bottom: 0px;
-    width: 100%;
+    
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -249,7 +276,7 @@ $color-base:rgb(0,0,0);
   padding:3px 0;
 }
   .text-prod:hover{
-  color:$color-href;
+  color:$color-select;
   
 }
 .text-special{
@@ -342,11 +369,16 @@ $color-base:rgb(0,0,0);
     .img_header {
       max-width: 150px;
     }
+    .img-prod{
+      border-radius: 20%;
+    }
   }
   @media screen and (min-width: 768px) {
     .btn_nav_mobile {
       display: none;
     }
-    
+    .img-prod{
+      border-radius: 80px;
+    }
   }
   
