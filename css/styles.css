@@ -210,7 +210,6 @@ body {
   border: 0.5px #E5E7E9 solid; }
 
 .active_p {
-  border: 0.5px #E5E7E9 solid;
   box-shadow: 0 0.35rem 1.2rem #c7c7c7; }
 
 .text-prod {
@@ -286,6 +285,4 @@ body {
 
 @media screen and (min-width: 768px) {
   .btn_nav_mobile {
-    display: none; }
-  .dif .product_select:hover {
-    border-color: #FFCC00; } }
+    display: none; } }

@@ -234,12 +234,15 @@ $color-base:rgb(0,0,0);
   width: 100%;
   cursor: pointer;
   border: 0.5px $color-border solid;
+  
 }
 
 .active_p{
-  border: 0.5px $color-border solid;
+  
   box-shadow: 0 0.35rem 1.2rem #c7c7c7;
+ 
 }
+
 .text-prod{
   color: $color-base;
   font-weight: 500;
@@ -258,7 +261,9 @@ $color-base:rgb(0,0,0);
 }
 
 
+
 /* KEYFRAMES*/
+
 @keyframes TextOpacity {
   0%{
     opacity: 0;
@@ -342,8 +347,6 @@ $color-base:rgb(0,0,0);
     .btn_nav_mobile {
       display: none;
     }
-    .dif .product_select:hover{
-        border-color: $color-select;
-    }
+    
   }
   
