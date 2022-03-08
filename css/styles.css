@@ -1,10 +1,27 @@
 /*COLORS*/
+/*BACKGROUND*/
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.bg-rose {
+  background-color: #FF0066; }
+
+.bg-sun {
+  background-color: #FFCC33; }
+
+.bg-neon {
+  background-color: #00FF66; }
+
+.bg-sky {
+  background-color: #3399FF; }
+
+.bg-sand {
+  background-color: #FFFFCC; }
+
 /* TXT */
 /* BUTTONS */
 /*FONTS*/
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 .img-prod {
-  border-radius: 80px; }
+  padding: 5px 0;
+  border-radius: 30%; }
 
 .txt-title, .txt-title-s {
   color: black;
@@ -30,6 +47,12 @@ html {
   margin-top: auto;
   flex-flow: row nowrap;
   align-items: center; }
+
+.d-500-none {
+  display: block; }
+
+.d-500-block {
+  display: none; }
 
 .footer_text {
   color: #c9c9c9;
@@ -294,10 +317,18 @@ body {
   .img_header {
     max-width: 150px; }
   .img-prod {
+    padding: 0 0;
     border-radius: 20%; } }
 
 @media screen and (min-width: 768px) {
   .btn_nav_mobile {
     display: none; }
   .img-prod {
+    padding: 0 0;
     border-radius: 80px; } }
+
+@media screen and (min-width: 650px) {
+  .d-500-none {
+    display: none; }
+  .d-500-block {
+    display: block; } }
