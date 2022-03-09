@@ -250,14 +250,16 @@ font-family: $font-title;
     
   }
 
-  .flip-flops:hover {
+ .flip-flops{
+    &:hover {
     background: linear-gradient(rgb(165, 0, 0), rgb(255, 134, 22));
     color: white;
   }
-  .flip-flops:focus {
+   &:focus {
     background: linear-gradient(rgb(165, 0, 0), rgb(255, 134, 22));
     color: white;
   }
+ }
   body {
     margin-bottom: 0px;
     
@@ -292,11 +294,11 @@ font-family: $font-title;
   color: $color-base;
   font-weight: 500;
   padding:3px 0;
+  &:hover{
+      color:$color-select;
+  }
 }
-  .text-prod:hover{
-  color:$color-select;
-  
-}
+ 
 .text-special{
   color: $color-text-white;
   font-size: 60px;
