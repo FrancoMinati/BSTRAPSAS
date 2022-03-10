@@ -2,8 +2,10 @@
 $color-select:#0000FF;
 $color-select-secondary:#F4F6F6;
 $color-hover:#E74C3C;
-$color-bg-dark:#1C2833;
+$color-dark:#1C2833;
 $color-text-white:#EAECEE;
+$color-text-black:black;
+$color-text-gray:rgb(201, 201, 201);
 $color-href:#34495E;
 $color-border:#E5E7E9;
 $color-base:rgb(0,0,0);
@@ -20,28 +22,23 @@ $bg-sand:#FFFFCC;
 .bg-sky{ background-color:$bg-sky;}
 .bg-sand{background-color:$bg-sand;}
 
+/*MIXIN & SASS*/
+
+@mixin txt-title{
+  color: $color-base;
+  font-size: $txt-title;
+  font-weight: $txt-bold;
+  font-family: $font-title;
+  }
+
 /* TXT */
 $txt-title:25px;
 $txt-title-secondary:17px;
 $txt-base:14px;
+$txt-btn:2rem;
 $txt-bold:600;
 $font-title:'Righteous';
 
-/* BUTTONS */
-
-/*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-@mixin txt-title{
-color: $color-base;
-font-size: $txt-title;
-font-weight: $txt-bold;
-font-family: $font-title;
-}
-.img-prod{
-  padding: 5px 0;
-  border-radius: 30%;
-}
 .txt-title{
   @include txt-title();
 }
@@ -50,14 +47,113 @@ font-family: $font-title;
   font-size: $txt-title-secondary;
   
 }
-/*                    FOOTER                    */
+
+
+
+/* BUTTONS */
+.btn_social_footer {
+  color:$color-text-gray ;
+  font-size: $txt-btn;
+  font-weight: bold;
+  &:hover{
+   color: $color-text-white;
+  }
+}
+.btn_txt {
+  color: $color-text-white;
+  font-size: $txt-btn;
+  font-weight: bold;
+  &_midpage{
+    font-family: 'Righteous', cursive;
+    color: $color-text-black;
+    &:hover{
+        font-family: 'Righteous', cursive;
+        color: $color-text-white; 
+    }
+  }
+}
+
+.btn_nav {
+  color: $color-text-white;
+  font-size: $txt-btn;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.btn_search {
+  background: none;
+  color: rgba(0, 0, 0, 0.438);
+  font-size: 1.3em;
+  border: none;
+  position: relative;
+  margin-left: 40px;
+  z-index: 2;
+}
+
+.btn_social {
+  color: white;
+  background-color: red;
+  font-size:$txt-btn;
+  border-radius: 50%;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  cursor: pointer;
+}
+.btn_galery{
+  
+  outline: none;
+  background-color: $bg-sand;
+  padding: 10px 16px;
+  width: 100%;
+  cursor: pointer;
+  border: 0.5px $color-border solid;
+  box-shadow: 0 0.35rem 1.2rem #c7c7c7;
+}
+.active_p{
+  
+  box-shadow: 0 0.35rem 1.2rem $color-dark;
+  animation: borderDark ease-in-out 1s;
+  
+}
+
+
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+/* ELEMENTS */
 * {
   padding: 0;
   margin: 0;
   }
-  html {
-    height: 100%;
-  }
+
+html {
+  height: 100%;
+}
+
+body {
+  margin-bottom: 0px;
+  
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+/* DISPLAY */ 
+
+.d-500-none{
+  display: block;
+}
+.d-500-block{
+  display: none;
+}
+
+
+/*                    FOOTER                    */
+
   .footer {
     background: linear-gradient($color-base,rgb(46, 46, 46));
     display: flex;
@@ -66,12 +162,7 @@ font-family: $font-title;
     flex-flow: row nowrap;
     align-items: center; 
   }
-  .d-500-none{
-    display: block;
-  }
-  .d-500-block{
-    display: none;
-  }
+  
   .footer_text {
     color: rgb(201, 201, 201);
     font-size: 12px;
@@ -83,15 +174,8 @@ font-family: $font-title;
     color: white;
   }
   
-  .btn_social_footer {
-    color: rgb(201, 201, 201);
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .btn_social_footer:hover{
-    color: white;
-  }
+ 
+ 
   /* IMGS*/
   .img_header {
     max-width: 120px;
@@ -102,7 +186,10 @@ font-family: $font-title;
   animation: Mover ease-in-out infinite 5s;
   align-self: center;
   }
-
+  .img-prod{
+    padding: 5px 0;
+    border-radius: 30%;
+  }
   .text-img{
     
     color: $color-base;
@@ -128,7 +215,7 @@ font-family: $font-title;
     z-index: 1200;
   }
   
-  .text_title {
+  .txt_title {
     color: $color-base;
     font-size: 20px;
     background: none;
@@ -139,7 +226,9 @@ font-family: $font-title;
     -webkit-background-clip: text;
     color: transparent;
   }
-
+  .navbar-toggler {
+    border: none;
+  }
   .nav_bar_close {
     color: white;
     background: #212529;
@@ -186,51 +275,7 @@ font-family: $font-title;
   }
   /* btn*/
   
-  .btn_txt {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .btn_txt_midpage{
-    font-family: 'Righteous', cursive;
-    color: black;
-  }
   
-  .btn_txt_midpage:hover{
-    font-family: 'Righteous', cursive;
-    color: white;
-   
-  }
-  .btn_nav {
-    color: white;
-    font-size: 1.4em;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  .btn_search {
-    background: none;
-    color: rgba(0, 0, 0, 0.438);
-    font-size: 1.3em;
-    border: none;
-    position: relative;
-    margin-left: 40px;
-    z-index: 2;
-  }
-  .navbar-toggler {
-    border: none;
-  }
-  .btn_social {
-    color: white;
-    background-color: red;
-    font-size: 1.2em;
-    border-radius: 50%;
-    padding: 8px;
-    text-align: center;
-    display: flex;
-    align-content: center;
-    cursor: pointer;
-  }
   
   /*FORM SEARCH*/
   .form_search {
@@ -260,35 +305,14 @@ font-family: $font-title;
     color: white;
   }
  }
-  body {
-    margin-bottom: 0px;
-    
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
+ 
   .img-relleno{
     height: 400px;
   }
   /* GALERIA DE PRODUCTOS */
-.btn_galery{
-  
-  border: none;
-  outline: none;
-  background-color: white;
-  padding: 10px 16px;
-  width: 100%;
-  cursor: pointer;
-  border: 0.5px $color-border solid;
-  
-}
 
-.active_p{
-  
-  box-shadow: 0 0.35rem 1.2rem #c7c7c7;
- 
-}
+
+
 
 .text-prod{
   color: $color-base;
@@ -310,13 +334,23 @@ font-family: $font-title;
 
 
 /* KEYFRAMES*/
-
+@keyframes borderDark {
+  0%{
+    box-shadow: 0 0.35rem 1.2rem #c7c7c7;
+  }
+  50%{
+    box-shadow: 0 0.35rem 1.2rem $color-href;
+  }
+  100%{
+    box-shadow: 0 0.35rem 1.2rem $color-dark;
+  }
+}
 @keyframes TextOpacity {
   0%{
     opacity: 0;
   }
-  25%{
-    opacity: 1;
+  50%{
+    opacity: 0.5;
   }
   100%{
     opacity: 1;
