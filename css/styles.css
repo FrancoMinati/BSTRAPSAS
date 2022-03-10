@@ -177,12 +177,6 @@ body {
 .navbar-toggler {
   border: none; }
 
-.nav_bar_close {
-  color: white;
-  background: #212529;
-  border: none;
-  -webkit-appearance: button; }
-
 hr {
   margin-top: 30px;
   width: 100%;
