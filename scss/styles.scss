@@ -16,6 +16,9 @@ $bg-sun: #ffcc33;
 $bg-neon: #00ff66;
 $bg-sky: #3399ff;
 $bg-sand: #ffffcc;
+$bg-grass:#66CC99;
+$bg-green:#23d623;
+
 .bg-rose {
   background-color: $bg-rose;
 }
@@ -31,11 +34,15 @@ $bg-sand: #ffffcc;
 .bg-sand {
   background-color: $bg-sand;
 }
-
+.bg-grass{
+  background-color: $bg-grass;
+}
 .black {
   background-color: $color-base;
 }
-
+.transparent{
+  background: transparent;
+}
 /*MIXIN & SASS*/
 
 @mixin txt-title {
@@ -72,8 +79,11 @@ $font-title: "Righteous";
     animation: TextOpacity ease-in infinite 20s;}
   &-prod {
     color: $color-base;
-    font-weight: 500;
-    padding: 3px 0;
+    font-weight: $txt-bold;
+    padding-top: 10px;
+    font-size: $txt-title-secondary;
+
+
     &:hover {
       color: $color-select;
     }
@@ -148,7 +158,7 @@ $font-title: "Righteous";
 }
 .btn_galery {
   outline: none;
-  background-color: $bg-sand;
+  background-color:$color-select-secondary;
   padding: 10px 16px;
   width: 100%;
   cursor: pointer;
@@ -156,10 +166,16 @@ $font-title: "Righteous";
   box-shadow: 0 0.35rem 1.2rem #c7c7c7;
 }
 .active_p {
-  box-shadow: 0 0.35rem 1.2rem $color-dark;
+  box-shadow: 0 0.5rem 1.2rem $color-dark;
   animation: borderDark ease-in-out 1s;
 }
-
+.btn-wsp{
+padding: 4px 10px 7px;
+font-size: 40px;
+background-color: $bg-green;
+color: white;
+border-radius:50%;
+}
 /*FONTS*/
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
@@ -207,6 +223,19 @@ hr {
   z-index: 120;
   opacity: 0.7;
   background-color: white;
+  
+}
+
+/* POSITION*/ 
+.sticky-top{
+  position:sticky;
+  top:
+  0;
+}
+.sticky-wap{
+position:fixed;
+left: 40px;
+bottom: 100px;
 }
 /*                    FOOTER                    */
 

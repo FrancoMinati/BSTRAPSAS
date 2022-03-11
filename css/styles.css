@@ -16,8 +16,14 @@
 .bg-sand {
   background-color: #ffffcc; }
 
+.bg-grass {
+  background-color: #66CC99; }
+
 .black {
   background-color: black; }
+
+.transparent {
+  background: transparent; }
 
 /*MIXIN & SASS*/
 /* TXT */
@@ -42,8 +48,9 @@
 
 .txt-prod {
   color: black;
-  font-weight: 500;
-  padding: 3px 0; }
+  font-weight: 600;
+  padding-top: 10px;
+  font-size: 17px; }
   .txt-prod:hover {
     color: #0000ff; }
 
@@ -110,7 +117,7 @@
 
 .btn_galery {
   outline: none;
-  background-color: #ffffcc;
+  background-color: #f4f6f6;
   padding: 10px 16px;
   width: 100%;
   cursor: pointer;
@@ -118,8 +125,15 @@
   box-shadow: 0 0.35rem 1.2rem #c7c7c7; }
 
 .active_p {
-  box-shadow: 0 0.35rem 1.2rem #1c2833;
+  box-shadow: 0 0.5rem 1.2rem #1c2833;
   animation: borderDark ease-in-out 1s; }
+
+.btn-wsp {
+  padding: 4px 10px 7px;
+  font-size: 40px;
+  background-color: #23d623;
+  color: white;
+  border-radius: 50%; }
 
 /*FONTS*/
 /* ELEMENTS */
@@ -159,6 +173,16 @@ hr {
   z-index: 120;
   opacity: 0.7;
   background-color: white; }
+
+/* POSITION*/
+.sticky-top {
+  position: sticky;
+  top: 0; }
+
+.sticky-wap {
+  position: fixed;
+  left: 40px;
+  bottom: 100px; }
 
 /*                    FOOTER                    */
 .footer {
