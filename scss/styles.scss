@@ -19,7 +19,13 @@ $bg-sand: #ffffcc;
 $bg-grass:#66CC99;
 $bg-green:#23d623;
 $bg-black:black;
-
+.bg-header{
+  background-color: $bg-black;
+  animation: aparecer 500ms ease-in-out;
+}
+.no-bg-sm{
+  background-color: $bg-black;
+}
 .bg-rose {
   background-color: $bg-rose;
 }
@@ -226,11 +232,7 @@ hr {
 }
 
 /* POSITION*/ 
-.sticky-top{
-  position:sticky;
-  top:
-  0;
-}
+
 .sticky-wap{
 position:fixed;
 left: 40px;
@@ -395,6 +397,12 @@ bottom: 100px;
     color: black;
   }
 }
+@keyframes aparecer {
+  
+  50%{padding: 20px 0px;}
+  100%{}
+}
+
 /* MQWERYS*/
 @media screen and (min-width: 1024px) {
   .img_header {
@@ -406,11 +414,30 @@ bottom: 100px;
   }
 }
 @media screen and (min-width: 768px) {
+  .no-bg-sm{
+    background-color: transparent;
+  }
+  .bg-header{
+    background-color: $bg-black;
+    animation: aparecer 500ms ease-in-out;
+  }
   .nobg{
-  
+  background: none;
     animation: desaparecer 500ms ease-in-out ;
     
   }
+  @keyframes aparecer {
+    0%{opacity: 0;}
+    50%{padding: 20px 0px;}
+    100%{opacity: 1;}}
+    @keyframes desaparecer {
+      0%{opacity: 1;
+      background: $bg-black;}
+      50%{padding: 20px 0px;}
+      100%{opacity: 0;
+        background: none;
+      }
+    }
   .img-prod {
     padding: 0 0;
     border-radius: 80px;
