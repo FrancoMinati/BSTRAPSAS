@@ -1,6 +1,31 @@
 /*COLORS*/
 /*BACKGROUND*/
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+.bg-header {
+  background-color: black;
+  animation: aparecer 500ms ease-in-out; }
+
+.nobg {
+  animation: desaparecer 500ms ease-in-out; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    background-color: black; }
+  50% {
+    padding: 20px 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+    background-color: black; }
+  50% {
+    padding: 20px 0; }
+  100% {
+    opacity: 0; } }
+
 .bg-rose {
   background-color: #ff0066; }
 
@@ -22,9 +47,6 @@
 .black {
   background-color: black; }
 
-.transparent {
-  background: transparent; }
-
 /*MIXIN & SASS*/
 /* TXT */
 .txt-title, .txt-title-s {
@@ -43,7 +65,7 @@
   font-weight: bold;
   font-family: "Righteous", cursive;
   background: black;
-  color: #eaecee;
+  color: #ffffff;
   animation: TextOpacity ease-in infinite 20s; }
 
 .txt-prod {
@@ -75,10 +97,10 @@
   font-size: 2rem;
   font-weight: bold; }
   .btn_social_footer:hover {
-    color: #eaecee; }
+    color: #ffffff; }
 
 .btn_txt {
-  color: #eaecee;
+  color: #ffffff;
   font-size: 2rem;
   font-weight: bold; }
   .btn_txt_midpage {
@@ -86,10 +108,10 @@
     color: black; }
     .btn_txt_midpage:hover {
       font-family: "Righteous", cursive;
-      color: #eaecee; }
+      color: #ffffff; }
 
 .btn_nav {
-  color: #eaecee;
+  color: #ffffff;
   font-size: 2rem;
   border: none;
   background: none;
@@ -153,7 +175,7 @@ body {
 
 hr {
   margin-top: 30px;
-  color: #eaecee; }
+  color: #ffffff; }
 
 /* DISPLAY */
 .d-500-none {
@@ -184,6 +206,13 @@ hr {
   left: 40px;
   bottom: 100px; }
 
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute;
+  top: 0; }
+
 /*                    FOOTER                    */
 .footer {
   background: linear-gradient(black, #2e2e2e);
@@ -199,7 +228,7 @@ hr {
     text-align: justify; }
     .footer_text:hover {
       font-weight: 600;
-      color: #eaecee; }
+      color: #ffffff; }
 
 /* IMGS*/
 .img-header {
@@ -214,6 +243,10 @@ hr {
 .img-prod {
   padding: 5px 0;
   border-radius: 30%; }
+
+.img-inicio {
+  width: 100%;
+  height: auto; }
 
 /*------------------------------------CSS NORMAL-----------------------*/
 .menu_item {
@@ -303,8 +336,8 @@ hr {
     border-radius: 20%; } }
 
 @media screen and (min-width: 768px) {
-  .btn_nav_mobile {
-    display: none; }
+  .nobg {
+    animation: desaparecer 500ms ease-in-out; }
   .img-prod {
     padding: 0 0;
     border-radius: 80px; } }

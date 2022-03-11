@@ -20,9 +20,16 @@
 
 <body>
   
+ 
   <header class="black sticky-top">
     
-      <nav class="navbar navbar-dark  ">
+    <!----------------------------------NAV--------------------------------->
+
+    <!----------------------------------MOBILE & TABLET--------------------->
+   
+   
+    <!----------------------------------DESKTOP-->
+      <nav class="navbar navbar-dark black ">
         <div class="container-fluid">
     <!--MOBILE Y TABLET-->
       <button class="btn_nav d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,14 +157,14 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="20000">
-        <img src="imagenes/clothes-h.jpg" class="d-block w-100" alt="carousel1">
-        <div class="carousel-caption d-none d-sm-block d-md-block  bring_tofront ">
+        <img src="imagenes/carrusel1.jpg" class="d-block w-100" alt="carousel1">
+        <div class="carousel-caption d-none d-sm-block d-md-block  bring_tofront mb-3 ">
           <h2 class="txt_title text-uppercase txt-anim "">Las Mejores Ofertas</h2>
                   <p class=" p">50% EN PRODUCTOS SELECCIONADOS</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="imagenes/clothes2-h.jpg" class="d-block w-100" alt="carousel2">
+        <img src="imagenes/carrusel2.jpg" class="d-block w-100" alt="carousel2">
 
         <div class="carousel-caption d-sm-block d-md-block bring_tofront mb-3" id="ir_aprod">
           <a href="paginas/product.html" class="text-decoration-none">
@@ -167,7 +174,7 @@
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-        <img src="imagenes/clothes3-h.jpg" class="d-block w-100" alt="carousel3">
+        <img src="imagenes/carrusel3.jpg" class="d-block w-100" alt="carousel3">
         <div class="carousel-caption d-none  d-sm-block d-md-block bring_tofront mb-3 mt-3">
           <h2 class="txt_title text-uppercase">Encontra tu estilo</h2>
           <p class=" p">SENTITE VOS MISMO</p>
@@ -462,7 +469,30 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function() {
+           if ($("#menu").offset().top > 30 ) {
+               $("#menu").addClass("bg-header");
+           } else {
+               $("#menu").removeClass("bg-header");
+           }
+         });
+         
+   </script>
+<script>
+  $(window).scroll(function() {
+           if ($("#menu").offset().top < 30 ) {
+               $("#menu").addClass("nobg");
+           } else {
+               $("#menu").removeClass("nobg");
+                
+           }
+         });
+</script>
 
+
+    
     <!------------------------FOOTER ------------------------------->
     <footer class="footer">
       <div class="container-fluid ">
