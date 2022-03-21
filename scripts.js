@@ -32,10 +32,11 @@
         this.className += " active_p";
       });
     }
+    
+    function black(id){
+      document.getElementById(id).classList.add("bg-header");
+    }
 
-  
-
- 
     function ocultar(id) {
       document.getElementById(id).style.display = 'none';
     }

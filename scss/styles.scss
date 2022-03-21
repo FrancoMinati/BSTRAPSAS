@@ -26,6 +26,7 @@ $bg-gray:#302f2f;
   background-color: $bg-black;
   animation: aparecer 500ms ease-in-out;
 }
+
 .no-bg-sm{
   background-color: $bg-black;
 }
@@ -82,8 +83,6 @@ $font-title: "Righteous";
 .txt-title-s {
   @extend .txt-title;
   font-size: 20px;
- 
- 
 }
 .txt{
   &-img {
@@ -120,6 +119,9 @@ $font-title: "Righteous";
     text-align: justify;
     color: $color-base;
     font-size: $txt-base;
+  }
+  &-white{
+    color: $color-text-white;
   }
   &-banner{
     color: $color-text-white;
@@ -311,6 +313,7 @@ hr {
   &-header {
     max-width: 120px;
     min-width: 80px;
+    
   }
   &-anim {
     max-width: 300px;
