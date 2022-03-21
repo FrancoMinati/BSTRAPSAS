@@ -12,7 +12,7 @@ $color-border: #e5e7e9;
 $color-base: rgb(0, 0, 0);
 $colors-primary:("red":#e74c3c,"blue":#0000ff,"yellow":#ffcc33);
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Righteous&family=Scheherazade+New&family=Yaldevi:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Open+Sans:wght@400;500;600&family=Righteous&family=Scheherazade+New&family=Yaldevi:wght@200;500&display=swap');
 $bg-rose: #ff0066;
 $bg-sun: #ffcc33;
 $bg-neon: #00ff66;
@@ -62,7 +62,7 @@ $bg-gray:#302f2f;
 
 /* TXT */
 $txt-title: 40px;
-$txt-title-secondary: 25px;
+$txt-title-secondary: 14px;
 $txt-base: 14px;
 $txt-btn: 2rem;
 $txt-bold: 600;
@@ -78,9 +78,9 @@ $font-title: "Righteous";
 }
 .txt-title-s {
   @extend .txt-title;
-  font-size: $txt-title-secondary;
-  color: $color-orange;
-  margin-top: 50px;
+  font-size: 20px;
+ 
+ 
 }
 .txt{
   &-img {
@@ -96,11 +96,11 @@ $font-title: "Righteous";
     color: $color-base;
     font-weight: $txt-bold;
     padding-top: 10px;
-    font-size: $txt-title-secondary;
+    font-size:$txt-title-secondary;
 
 
     &:hover {
-      color: $color-select;
+      color: $color-hover;
     }
   }
   &_title {
@@ -120,18 +120,18 @@ $font-title: "Righteous";
   }
   &-banner{
     color: $color-text-white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    font-family: 'Markazi Text', serif;
+    font-family: 'Righteous', serif;
     margin-bottom: 60px;
     background: transparentize($color: $bg-black, $amount: 0.65);
-    padding: 5px 20px;
+    padding: 8px 20px;
     margin-right: 20px;
     border: 2px $color-select-secondary solid;
     &:hover{
       color: $color-text-white;
-      border: none;
-      background-color: $bg-gray;
+      border-color: $color-orange;
+     
       
     }
   }
@@ -144,11 +144,11 @@ $font-title: "Righteous";
 }
 /* BUTTONS */
 .btn_social_footer {
-  color: $color-text-gray;
+  color: $color-base;
   font-size: $txt-btn;
   font-weight: bold;
   &:hover {
-    color: $color-text-white;
+    color: $color-hover;
   }
 }
 .btn_txt {
@@ -205,14 +205,14 @@ $font-title: "Righteous";
   box-shadow: 0 0.5rem 1.2rem $color-dark;
   animation: borderDark ease-in-out 1s;
 }
-.btn-wsp{
-padding: 4px 10px 7px;
-font-size: 40px;
-background-color: $bg-green;
-color: white;
-border-radius:50%;
-}
 
+.btn_return{
+  color: $color-base;
+  font-size: 40px;
+  &:hover{
+    color: $color-orange;
+  }
+}
 /* ELEMENTS */
 * {
   padding: 0;
@@ -225,7 +225,7 @@ html {
 
 body {
   margin-bottom: 0px;
-  font-family: 'Righteous', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -267,11 +267,6 @@ hr {
 }
 /* POSITION*/ 
 
-.sticky-wap{
-position:fixed;
-left: 40px;
-bottom: 100px;
-}
 .relative{
   position: relative;
 }
@@ -282,20 +277,28 @@ bottom: 100px;
 /*                    FOOTER                    */
 
 .footer {
-  background: linear-gradient($color-base, rgb(46, 46, 46));
+  // background: linear-gradient($color-base, rgb(46, 46, 46));
   display: flex;
   justify-content: flex-end;
   margin-top: auto;
+  padding-top: 60px;
   flex-flow: row nowrap;
   align-items: center;
+  
   &_text {
-    color: $color-border;
-    font-size: 12px;
+    color: $txt-base;
+    font-size: 16px;
     flex-grow: 1;
-    text-align: justify;
+    text-align: center;
+    font-family: 'Righteous',serif;
     &:hover {
-      font-weight: $txt-bold;
-      color: $color-text-white;
+      font-weight: 500;
+      color: $color-orange;
+      
+    }
+    &-copyright{
+      color: $bg-gray;
+      font-size: small;
     }
   }
 }
@@ -318,6 +321,10 @@ bottom: 100px;
   &-inicio{
     width: 100%;
     height: auto;
+  }
+  &-yo{
+    border-radius: 50%;
+    max-width: 300px;
   }
 }
 
@@ -439,6 +446,7 @@ bottom: 100px;
 
 /* MQWERYS*/
 @media screen and (min-width: 1024px) {
+  
   $txt-title:80px;
   .txt-title-banner{
     font-size: $txt-title;
@@ -452,6 +460,30 @@ bottom: 100px;
   }
 }
 @media screen and (min-width: 768px) {
+  .txt-prod{
+    font-size:17px ;
+  }
+  .txt-norm{
+  font-size: 17px;}
+  .btn_return{
+    color: $txt-base;
+    font-size: 70px;
+    
+  }
+  .sticky-wap{
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    }
+  .btn-wsp{
+    font-size: 35px;
+    padding: 5px 11.5px;
+    align-items: center;
+    background-color: $bg-grass;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
   .no-bg-sm{
     background-color: transparent;
   }

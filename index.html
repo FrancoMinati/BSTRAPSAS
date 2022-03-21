@@ -21,7 +21,7 @@
 <body>
 
 
-  <header>
+  <header id="page_init">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">
@@ -32,6 +32,16 @@
         </div>
         <div class="carousel-item " data-bs-interval="5000">
           <img src="imagenes/clothes3-h.jpg" class="d-block w-100" alt="clothes">
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <div class="d-flex justify-content-center mb-5">
+            <a class="text-decoration-none" target="_blank" href="paginas/product.html">
+              <h2 class="txt-banner text-uppercase">Comprar ahora</h2>
+            </a>
+            <a class="text-decoration-none" target="_blank" href="paginas/your_design.html">
+              <h2 class="txt-banner text-uppercase">Diseñar ahora</h2>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -180,68 +190,72 @@
     </div>
     <div class="row mt-4">
       <div class="col"><img src="imagenes/shirt-h.jpg" alt="" class="img-fluid w-100">
-        <h2 class="txt-title ">Elegí tu estilo</h2>
       </div>
     </div>
   </div>
- 
+
 
   <!--------------------- SECCIONES --------------------------------->
-  <div class="container-fluid mt-5 ps-5" >
+  <div class="container mt-5">
     <h2 class="txt-title-s">Explora nuestros productos</h2>
   </div>
-  <div class="container-fluid px-5" id="PG1">
+  <div class="container " id="PG1">
 
 
     <div class="my-5 d-none d-md-block">
       <div class="row d-flex justify-content-center ">
         <div class="col-3"><button class="btn_galery txt-prod"
             onclick="mostrar('sec1') & ocultar('sec2') & ocultar('sec3') & ocultar('sec4')"><a href="#sec1"
-              class="text-decoration-none"><img src="imagenes/Ojota_Producto.png" class="img-fluid img-thumbnail"
+              class="text-decoration-none"><img src="imagenes/ojota_p (1).jpg" class="img-fluid img-thumbnail"
                 alt="ojota"></a>
-            <h6 class="pt-3">Product-Title</h6>
+            <h6 class="pt-3 txt-prod">Product-Title</h6>
           </button></div>
         <div class="col-3"><button class="btn_galery txt-prod"
             onclick="mostrar('sec2') & ocultar('sec1') & ocultar('sec3') & ocultar('sec4')"><a href="#sec2"
-              class="text-decoration-none"><img src="imagenes/Ojota_Producto_2.png" class="img-fluid img-thumbnail"
+              class="text-decoration-none"><img src="imagenes/ojota_p (2).jpg" class="img-fluid img-thumbnail"
                 alt="ojota"></a>
-            <h6 class="pt-3">Product Title</h6>
+            <h6 class="pt-3 txt-prod">Product Title</h6>
           </button></div>
         <div class="col-3"><button class="btn_galery txt-prod"
             onclick="mostrar('sec3') & ocultar('sec1') & ocultar('sec2') & ocultar('sec4')"><a href="#sec3"
-              class="text-decoration-none"><img src="imagenes/Ojota_Producto_3.png" class="img-fluid img-thumbnail"
+              class="text-decoration-none"><img src="imagenes/ojota_p (3).jpg" class="img-fluid img-thumbnail"
                 alt="ojota"></a>
-            <h6 class="pt-3">Product Title</h6>
+            <h6 class="pt-3 txt-prod">Product Title</h6>
           </button></div>
         <div class="col-3"><button class="btn_galery txt-prod"
             onclick="mostrar('sec4') & ocultar('sec1') & ocultar('sec2') & ocultar('sec3')"><a href="#sec4"
-              class="text-decoration-none"><img src="imagenes/Ojota_Producto_4.png" class="img-fluid img-thumbnail"
+              class="text-decoration-none"><img src="imagenes/ojota_p (4).jpg" class="img-fluid img-thumbnail"
                 alt="ojota"></a>
-            <h6 class="pt-3">Product Title</h6>
+            <h6 class="pt-3 txt-prod">Product Title</h6>
           </button></div>
       </div>
     </div>
 
     <div class=" d-md-none my-5 ">
       <div class="row d-flex justify-content-center ">
-        <div class="col-4 px-1"><button class="btn_galery"
+        <div class="col-4 "><button class="btn_galery"
             onclick="mostrar('sec1') & ocultar('sec2') & ocultar('sec3')"><a href="#sec1"
-              class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto.png" alt="ojota"
+              class="text-decoration-none txt-prod"><img src="imagenes/ojota_p (1).jpg" alt="ojota"
                 class="img-fluid img-thumbnail">
-              <h6 class="text-center     txt-prod mt-2">Product Title</h6>
+              
             </a></button></div>
-        <div class="col-4 px-1"><button class="btn_galery"
+        <div class="col-4 "><button class="btn_galery"
             onclick="mostrar('sec2') & ocultar('sec1') & ocultar('sec3')"><a href="#sec2"
-              class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto_2.png" alt="ojota"
+              class="text-decoration-none txt-prod"><img src="imagenes/ojota_p (2).jpg" alt="ojota"
                 class="img-fluid img-thumbnail">
-              <h6 class="text-center txt-prod mt-2">Product Title</h6>
+              
             </a></button></div>
-        <div class="col-4 px-1"><button class="btn_galery"
+        <div class="col-4 "><button class="btn_galery"
             onclick="mostrar('sec3') & ocultar('sec1') & ocultar('sec2')"><a href="#sec3"
-              class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto_3.png" alt="ojota"
+              class="text-decoration-none txt-prod"><img src="imagenes/ojota_p (3).jpg" alt="ojota"
                 class="img-fluid img-thumbnail">
-              <h6 class="text-center   txt-prod mt-2">Product Title</h6>
+              
             </a></button></div>
+      </div>
+      <div class="row">
+        <div class="col"><h6 class="pt-3 txt-prod text-center">Product Title</h6></div>  
+        <div class="col"><h6 class="pt-3 txt-prod text-center">Product Title</h6></div>  
+        <div class="col"><h6 class="pt-3 txt-prod text-center">Product Title</h6></div>
       </div>
     </div>
 
@@ -249,16 +263,16 @@
 
 
 
-  <section id="sec1" class="bg-rose pt-5 none">
+  <section id="sec1" class="shadow-lg pt-5 none">
     <div class="container-fluid  d-flex">
       <div class="row justify-content-center">
         <!-- IMG DESKTOP -->
-        <div class="col-6 d-md-block d-500-block">
-          <img src="imagenes/Ojota_Producto.png" alt="" class="img-fluid px-5 py-5 img-prod">
+        <div class="col-3 d-md-block d-500-block">
+          <img src="imagenes/ojota_p (1).jpg" alt="" class="img-fluid px-5 py-5 img-prod w-100">
         </div>
         <!-- IMG MOBILE Y TABLET-->
         <div class="col-10 d-500-none ">
-          <img src="imagenes/Ojota_Producto.png" alt="" class="img-fluid px-5  img-prod">
+          <img src="imagenes/ojota_p (1).jpg" alt="" class="img-fluid px-5  img-prod">
         </div>
 
         <div class="col px-5 d-flex flex-column align-items-end">
@@ -269,14 +283,14 @@
             repudiandae dignissimos mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
             veritatis quod temporibus, non incidunt minus possimus culpa laborum beatae adipisci reprehenderit
             voluptatem laboriosam saepe doloribus rem? Nisi magnam aperiam corrupti!</p>
-          <h6 class="txt-title-s">Caracteristicas</h6>
-          <ul class="txt-norm mb-auto">
+          <h6 class="txt-title-s  pt-3">Caracteristicas</h6>
+          <ul class="txt-norm mb-auto  pt-1">
             <li class="mt-2">Caracteristica 1</li>
             <li class="mt-2">Caracteristica 2</li>
             <li class="mt-2">Caracteristica 3</li>
             <li class="mt-2">Caracteristica 4</li>
           </ul>
-          <button class="btn bg-light mb-5 align-self-end border-1 border-dark txt-title-s mt-5"><a href=""
+          <button class="btn bg-light align-self-end border-1 border-dark txt-title-s my-5"><a href=""
               class="text-decoration-none txt-prod">Comprar</a></button>
         </div>
       </div>
@@ -284,12 +298,12 @@
   </section>
 
 
-  <section id="sec2" class="bg-sun pt-5 none ">
+  <section id="sec2" class="shadow-lg pt-5 none ">
     <div class="container-fluid  d-flex">
       <div class="row justify-content-center">
         <!-- IMG MOBILE Y TABLET-->
         <div class="col-10 d-500-none">
-          <img src="imagenes/Ojota_Producto_2.png" alt="" class="img-fluid px-5 img-prod ">
+          <img src="imagenes/ojota_p (2).jpg" alt="" class="img-fluid px-5 img-prod ">
         </div>
         <div class="col px-5 d-flex flex-column ali">
           <h2 class="txt-title pt-5">Flop Amarilla</h2>
@@ -300,8 +314,8 @@
             Iste accusamus cumque saepe possimus dolorem molestias nihil optio distinctio, unde facere vitae doloremque
             eligendi, odio, fuga iure temporibus accusantium magnam. Id officiis voluptatem impedit saepe facilis omnis
             quae modi?</p>
-          <h6 class="txt-title-s">Caracteristicas</h6>
-          <ul class="txt-norm mb-auto">
+          <h6 class="txt-title-s  pt-3">Caracteristicas</h6>
+          <ul class="txt-norm mb-auto pt-1">
             <li class="mt-2">Caracteristica 1</li>
             <li class="mt-2">Caracteristica 2</li>
             <li class="mt-2">Caracteristica 3</li>
@@ -312,9 +326,9 @@
         </div>
 
         <!-- IMG DESKTOP -->
-        <div class="col-6 d-md-block d-500-block ">
+        <div class="col-3 d-md-block d-500-block ">
           <div class="d-flex justify-content-end">
-            <img src="imagenes/Ojota_Producto_2.png" alt="" class="img-fluid px-5 py-5 img-prod">
+            <img src="imagenes/ojota_p (2).jpg" alt="" class="img-fluid px-5 py-5 img-prod w-100">
           </div>
         </div>
 
@@ -323,16 +337,16 @@
     </div>
   </section>
 
-  <section id="sec3" class="bg-sky pt-5 none">
+  <section id="sec3" class="shadow-lg pt-5 none">
     <div class="container-fluid  d-flex">
       <div class="row justify-content-center">
         <!-- IMG DESKTOP -->
-        <div class="col-6 d-md-block d-500-block">
-          <img src="imagenes/Ojota_Producto_3.png" alt="" class="img-fluid px-5 py-5 img-prod">
+        <div class="col-3 d-md-block d-500-block">
+          <img src="imagenes/ojota_p (3).jpg" alt="" class="img-fluid px-5 py-5 img-prod w-100">
         </div>
         <!-- IMG MOBILE Y TABLET-->
         <div class="col-10 d-500-none ">
-          <img src="imagenes/Ojota_Producto_3.png" alt="" class="img-fluid px-5  img-prod">
+          <img src="imagenes/ojota_p (3).jpg" alt="" class="img-fluid px-5  img-prod">
         </div>
 
         <div class="col px-5 d-flex flex-column align-items-end">
@@ -344,8 +358,8 @@
             Nulla numquam tempore rem autem reiciendis quisquam ullam aspernatur natus totam? Est provident accusamus
             consectetur iure magnam neque eum facilis, voluptas labore harum quaerat molestiae quibusdam ipsum quam
             expedita pariatur.</p>
-          <h6 class="txt-title-s">Caracteristicas</h6>
-          <ul class="txt-norm mb-auto">
+          <h6 class="txt-title-s  pt-3">Caracteristicas</h6>
+          <ul class="txt-norm mb-auto pt-1">
             <li class="mt-2">Caracteristica 1</li>
             <li class="mt-2">Caracteristica 2</li>
             <li class="mt-2">Caracteristica 3</li>
@@ -358,12 +372,12 @@
     </div>
   </section>
 
-  <section id="sec4" class="bg-sand pt-5 none ">
+  <section id="sec4" class="shadow-lg pt-5 none ">
     <div class="container-fluid  d-flex">
       <div class="row justify-content-center">
         <!-- IMG MOBILE Y TABLET-->
         <div class="col-10 d-500-none ">
-          <img src="imagenes/Ojota_Producto_4.png" alt="" class="img-fluid px-5  img-prod">
+          <img src="imagenes/ojota_p (4).jpg" alt="" class="img-fluid px-5  img-prod">
         </div>
         <div class="col px-5 d-flex flex-column ">
           <h2 class="txt-title pt-5">Flop Casual</h2>
@@ -374,8 +388,8 @@
             Possimus sapiente aliquam nihil quasi totam mollitia. Laudantium reiciendis eius dolores impedit sit quod
             harum suscipit consequatur blanditiis mollitia dolore totam pariatur odio consequuntur quos consectetur,
             aperiam in assumenda nulla!</p>
-          <h6 class="txt-title-s">Caracteristicas</h6>
-          <ul class="txt-norm mb-auto">
+          <h6 class="txt-title-s  pt-3">Caracteristicas</h6>
+          <ul class="txt-norm mb-auto pt-1">
             <li class="mt-2">Caracteristica 1</li>
             <li class="mt-2">Caracteristica 2</li>
             <li class="mt-2">Caracteristica 3</li>
@@ -386,9 +400,9 @@
         </div>
 
         <!-- IMG DESKTOP -->
-        <div class="col-6 d-md-block d-500-block">
+        <div class="col-3 d-md-block d-500-block">
           <div class="d-flex justify-content-end">
-            <img src="imagenes/Ojota_Producto_4.png" alt="" class="img-fluid px-5 py-5 img-prod">
+            <img src="imagenes/ojota_p (4).jpg" alt="" class="img-fluid px-5 py-5 img-prod w-100">
           </div>
         </div>
 
@@ -399,6 +413,20 @@
 
 
 
+  <div class="container my-3">
+    <div class="row d-flex justify-content-center ">
+      <div class="col"><img src="imagenes/phrase-v.jpg" alt="frase" class="img-fluid shadow-lg"></div>
+      <div class="col"><img src="imagenes/jacket-v.jpg" alt="chaqueta con frase" class="img-fluid shadow-lg"></div>
+    </div>
+    <div class="row d-flex justify-content-center mt-5">
+      
+      <a href="https://www.instagram.com/francominati/" class="text-decoration-none text-center txt-title txt-prod "
+        target="_blank"><img src="imagenes/yo_el_creador.jpg" alt="yo" class="img fluid img-yo mt-5">
+        <h2>Seguime en Instagram <i class="bi bi-instagram shadow-lg mt-3"></i></h2>
+      </a>
+       
+    </div>
+  </div>
 
   <!------------------- TABLET LANDSCAPE Y DESKTOP-->
 
@@ -414,7 +442,7 @@
 
 
 
-  <span class="sticky-wap d-flex justify-content-end"><a href="https://walink.co/98d095"><i
+   <span class="sticky-wap d-flex justify-content-end d-none d-md-block"><a href="https://walink.co/98d095"><i
         class="bi bi-whatsapp btn-wsp "></i></a></span>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -424,148 +452,62 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB"
     crossorigin="anonymous"></script>
-  <script>
-    $(window).scroll(function () {
-      if ($("#menu").offset().top > 30) {
-        $("#menu").addClass("bg-header");
-      } else {
-        $("#menu").removeClass("bg-header");
-      }
-    });
-
-  </script>
-  <script>
-    $(window).scroll(function () {
-      if ($("#menu").offset().top < 30) {
-        $("#menu").addClass("nobg");
-      } else {
-        $("#menu").removeClass("nobg");
-
-      }
-    });
-  </script>
-
-  <script>
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("PG1");
-    var btns = header.getElementsByClassName("btn_galery");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active_p");
-        if (current.length > 0) {
-          current[0].className = current[0].className.replace(" active_p", "");
-        }
-        this.className += " active_p";
-      });
-    }
-
-  </script>
-
-  <script>
-    function ocultar(id) {
-      document.getElementById(id).style.display = 'none';
-    }
-  </script>
-  <script>
-    function mostrar(id) {
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
-
+  <script src="scripts.js"></script>
   <!------------------------FOOTER ------------------------------->
   <footer class="footer">
     <div class="container-fluid ">
-      <div class="row mt-3 d-flex ">
-
-        <!----------------------MOBILE FOOTER------------------------------->
-        <div class="col-6 d-md-none">
-          <p class="footer_text">Copyright&copy; 2008 - Página creada por Franco Minati - Todos los derechos reservados
-          </p>
-          <a href="mailto:francominati2@gmail.com?Subject=Contacto%20con%20Franco%20pagina%20web"
-            class="text-decoration-none" target="_blank">
-            <p class="footer_text">francominati2@gmail.com</p>
-          </a>
-          <a href="paginas/product.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Productos</p>
-          </a>
-          <a href="paginas/your_design.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Tu diseño</p>
-          </a>
-          <a href="paginas/contact.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Contacto</p>
-          </a>
-          <a href="paginas/us.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Nosotros</p>
-          </a>
-        </div>
-        <div class="col-6 d-flex flex-wrap pe-2 d-md-none">
-          <div class="d-flex pe-2 agrandar flex-wrap justify-content-end">
-            <button class="btn "><a class="text-decoration-none" href=""><i
-                  class="bi bi-whatsapp btn_social"></i></a></button>
-            <button class="btn "><a class="text-decoration-none" href=""><i
-                  class="bi bi-facebook btn_social"></i></a></button>
-          </div>
-          <div class="d-flex pe-2 agrandar flex-wrap justify-content-end">
-            <button class="btn "><a class="text-decoration-none" href=""><i
-                  class="bi bi-instagram btn_social"></i></a></button>
-            <button class="btn "><a class="text-decoration-none" href=""><i
-                  class="bi bi-twitter  btn_social"></i></a></button>
-          </div>
-        </div>
-        <!----------------------DESKTOP Y TABLET FOOTER-->
-        <div class="col-3 d-none d-md-block">
-          <p class="footer_text">Copyright&copy; 2022 - Página creada por Franco Minati - Todos los derechos reservados
-          </p>
-          <a href="https://open.spotify.com/track/1AERsDlEADxcp9WtjZBtiU?si=8501cfa080d141f8"
-            class="text-decoration-none" target="_blank">
-            <p class="footer_text"><i class="bi bi-music-note-beamed btn_social_footer"></i></p>
-          </a>
-        </div>
-        <div class="col-3 d-none d-md-block ps-5">
-          <a href="mailto:francominati2@gmail.com?Subject=Contacto%20con%20Franco%20pagina%20web"
-            class="text-decoration-none" target="_blank">
-            <p class="footer_text">francominati2@gmail.com</p>
-          </a>
-          <a href="https://github.com/FrancoMinati" target="_blank" class="text-decoration-none">
-            <p class="footer_text"><i class="bi bi-github btn_social_footer"></i></p>
-          </a>
-
-        </div>
-        <div class="col-3 d-none d-md-block ps-5">
-          <a href="paginas/product.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Productos</p>
-          </a>
-          <a href="paginas/your_design.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Tu diseño</p>
-          </a>
-          <a href="paginas/contact.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Contacto</p>
-          </a>
-          <a href="paginas/us.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Nosotros</p>
-          </a>
-        </div>
-        <div class="col-3 d-flex flex-wrap pe-2 d-none d-md-block">
-          <div class="d-flex pe-2 agrandar flex-wrap justify-content-end">
-            <button class="btn "><a class="text-decoration-none" href=""><i
-                  class="bi bi-whatsapp btn_social"></i></a></button>
-            <button class="btn "><a class="text-decoration-none" href=""><i
-                  class="bi bi-facebook btn_social"></i></a></button>
-          </div>
-          <div class="d-flex pe-2 agrandar flex-wrap justify-content-end">
-            <button class="btn "><a class="text-decoration-none" href=""><i
-                  class="bi bi-instagram btn_social"></i></a></button>
-            <button class="btn "><a class="text-decoration-none" href=""><i
-                  class="bi bi-twitter  btn_social"></i></a></button>
-          </div>
-        </div>
-
-
-
+      <div class="row ">
+        <div class="col d-flex justify-content-center"><a href="#page_init" class="text-decoration-none text-center"><i class="bi bi-arrow-up-circle-fill btn_return"></i></a></div>
       </div>
-
-
+      <div class="row d-flex justify-content-center">
+        <div class="col-3">
+          <a href="paginas/product.html" class="txt-norm text-decoration-none">
+            <p class="footer_text ">Productos</p>
+          </a>
+        </div>
+        <div class="col-3"><a href="paginas/your_design.html" class="txt-norm text-decoration-none">
+            <p class="footer_text">Tu diseño</p>
+          </a></div>
+        <div class="col-3"><a href="paginas/contact.html" class="txt-norm text-decoration-none">
+            <p class="footer_text">Contacto</p>
+          </a></div>
+        <div class="col-3"><a href="paginas/us.html" class="txt-norm text-decoration-none">
+            <p class="footer_text">Nosotros</p>
+        </div>
+        </a>
+      </div>
+      <div class="row mt-2 mb-5 d-flex justify-content-center">
+        <div class="col-2 text-center">
+          <button class="btn "><a class="text-decoration-none " href=""><i
+          class="bi bi-whatsapp btn_social_footer"></i></a></button>
+        </div>
+        <div class="col-2 text-center">
+          <button class="btn "><a class="text-decoration-none" href=""><i
+            class="bi bi-facebook btn_social_footer"></i></a></button>
+        </div>
+        <div class="col-2 text-center">
+          <button class="btn "><a class="text-decoration-none " href=""><i
+            class="bi bi-instagram btn_social_footer"></i></a></button>
+        </div>
+        <div class="col-2 text-center">
+          <button class="btn "><a class="text-decoration-none " href=""><i
+            class="bi bi-twitter  btn_social_footer"></i></a></button>
+        </div>
+        <div class="col-2"><a href="mailto:francominati2@gmail.com?Subject=Contacto%20con%20Franco%20pagina%20web"class="txt-norm text-decoration-none" target="_blank">
+          <p class="footer_text text-center"><i class="bi bi-envelope btn_social_footer"></i></p></a>
+        </div>
+       <div class="col-2">
+        <a href="https://github.com/FrancoMinati" target="_blank" class="txt-norm text-decoration-none">
+          <p class="footer_text text-center"><i class="bi bi-github btn_social_footer"></i></p></a>
+      </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+         <p class="footer_text-copyright text-center">Copyright&copy; 2008 - Página creada por Franco Minati - Todos los derechos reservados</p>
+        </div>
+      </div>
     </div>
+
   </footer>
 
 </body>
