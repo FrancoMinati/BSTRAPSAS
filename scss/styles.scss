@@ -7,6 +7,7 @@ $color-text-white: #ffffff;
 $color-text-black: black;
 $color-text-gray: rgb(201, 201, 201);
 $color-href: #34495e;
+$color-orange:#FF5722;
 $color-border: #e5e7e9;
 $color-base: rgb(0, 0, 0);
 $colors-primary:("red":#e74c3c,"blue":#0000ff,"yellow":#ffcc33);
@@ -61,7 +62,7 @@ $bg-gray:#302f2f;
 
 /* TXT */
 $txt-title: 40px;
-$txt-title-secondary: 17px;
+$txt-title-secondary: 25px;
 $txt-base: 14px;
 $txt-btn: 2rem;
 $txt-bold: 600;
@@ -78,6 +79,8 @@ $font-title: "Righteous";
 .txt-title-s {
   @extend .txt-title;
   font-size: $txt-title-secondary;
+  color: $color-orange;
+  margin-top: 50px;
 }
 .txt{
   &-img {
@@ -181,7 +184,6 @@ $font-title: "Righteous";
 
 .btn_social {
   color: white;
-  background-color: red;
   font-size: $txt-btn;
   border-radius: 50%;
   padding: 8px;
@@ -257,7 +259,12 @@ hr {
   background-color: white;
   
 }
-
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
 /* POSITION*/ 
 
 .sticky-wap{

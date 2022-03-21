@@ -45,7 +45,9 @@
   margin: 40px 0 30px; }
 
 .txt-title-s {
-  font-size: 17px; }
+  font-size: 25px;
+  color: #FF5722;
+  margin-top: 50px; }
 
 .txt-img {
   color: black;
@@ -61,7 +63,7 @@
   color: black;
   font-weight: 600;
   padding-top: 10px;
-  font-size: 17px; }
+  font-size: 25px; }
   .txt-prod:hover {
     color: #0000ff; }
 
@@ -138,7 +140,6 @@
 
 .btn_social {
   color: white;
-  background-color: red;
   font-size: 2rem;
   border-radius: 50%;
   padding: 8px;
@@ -205,6 +206,12 @@ hr {
   z-index: 120;
   opacity: 0.7;
   background-color: white; }
+
+.none {
+  display: none; }
+
+.block {
+  display: block; }
 
 /* POSITION*/
 .sticky-wap {
