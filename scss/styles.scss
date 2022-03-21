@@ -10,7 +10,8 @@ $color-href: #34495e;
 $color-border: #e5e7e9;
 $color-base: rgb(0, 0, 0);
 $colors-primary:("red":#e74c3c,"blue":#0000ff,"yellow":#ffcc33);
-/*BACKGROUND*/
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Righteous&family=Scheherazade+New&family=Yaldevi:wght@200;500&display=swap');
 $bg-rose: #ff0066;
 $bg-sun: #ffcc33;
 $bg-neon: #00ff66;
@@ -19,6 +20,7 @@ $bg-sand: #ffffcc;
 $bg-grass:#66CC99;
 $bg-green:#23d623;
 $bg-black:black;
+$bg-gray:#302f2f;
 .bg-header{
   background-color: $bg-black;
   animation: aparecer 500ms ease-in-out;
@@ -58,7 +60,7 @@ $bg-black:black;
 }
 
 /* TXT */
-$txt-title: 25px;
+$txt-title: 40px;
 $txt-title-secondary: 17px;
 $txt-base: 14px;
 $txt-btn: 2rem;
@@ -67,6 +69,11 @@ $font-title: "Righteous";
 
 .txt-title {
   @include txt-title();
+  
+}
+.txt-title-banner{
+  @include txt-title();
+  margin: 40px 0 30px;
 }
 .txt-title-s {
   @extend .txt-title;
@@ -108,8 +115,30 @@ $font-title: "Righteous";
     color: $color-base;
     font-size: $txt-base;
   }
+  &-banner{
+    color: $color-text-white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Markazi Text', serif;
+    margin-bottom: 60px;
+    background: transparentize($color: $bg-black, $amount: 0.65);
+    padding: 5px 20px;
+    margin-right: 20px;
+    border: 2px $color-select-secondary solid;
+    &:hover{
+      color: $color-text-white;
+      border: none;
+      background-color: $bg-gray;
+      
+    }
+  }
 }
-
+.hot:hover{
+  color: $color-hover;
+}
+.cold:hover{
+  color: $bg-sky;
+}
 /* BUTTONS */
 .btn_social_footer {
   color: $color-text-gray;
@@ -181,8 +210,6 @@ background-color: $bg-green;
 color: white;
 border-radius:50%;
 }
-/*FONTS*/
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 /* ELEMENTS */
 * {
@@ -196,7 +223,7 @@ html {
 
 body {
   margin-bottom: 0px;
-
+  font-family: 'Righteous', sans-serif;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -405,6 +432,10 @@ bottom: 100px;
 
 /* MQWERYS*/
 @media screen and (min-width: 1024px) {
+  $txt-title:80px;
+  .txt-title-banner{
+    font-size: $txt-title;
+  }
   .img_header {
     max-width: 150px;
   }

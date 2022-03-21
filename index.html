@@ -22,11 +22,20 @@
   
  
   <header >
-    <img src="imagenes/clothes-h.jpg" alt="banner" class="w-100 ">
-    <!----------------------------------NAV--------------------------------->
-
-    <!----------------------------------MOBILE & TABLET--------------------->
-   
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="imagenes/clothes-h.jpg" class="d-block w-100" alt="clothes">
+        </div>
+        <div class="carousel-item " data-bs-interval="5000">
+          <img src="imagenes/clothes2-h.jpg" class="d-block w-100" alt="clothes">
+        </div>
+        <div class="carousel-item " data-bs-interval="5000">
+          <img src="imagenes/clothes3-h.jpg" class="d-block w-100" alt="clothes">
+        </div>
+        
+      </div>
+    </div>
    
     <!----------------------------------DESKTOP-->
       <nav class="navbar navbar-dark fixed-top" id="menu">
@@ -44,7 +53,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Productos
             </a>
-            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+            <ul class="dropdown-menu me-3" aria-labelledby="offcanvasNavbarDropdown">
               <li><a class="dropdown-item" href="#">Remeras</a></li>
               <li><a class="dropdown-item" href="#">Buzos</a></li>
               <li><a class="dropdown-item" href="#">Camperas</a></li>
@@ -142,140 +151,23 @@
     
 </nav>
   </header>
-  <!----------------------------------------------------------------- CARRUSEL------------------------------------------------------------------------------------->
 
-<!-- 
-  <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
 
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="20000">
-        <img src="imagenes/carrusel1.jpg" class="d-block w-100" alt="carousel1">
-        <div class="carousel-caption d-none d-sm-block d-md-block  bring_tofront mb-3 ">
-          <h2 class="txt_title text-uppercase txt-anim "">Las Mejores Ofertas</h2>
-                  <p class=" p">50% EN PRODUCTOS SELECCIONADOS</p>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="imagenes/carrusel2.jpg" class="d-block w-100" alt="carousel2">
-
-        <div class="carousel-caption d-sm-block d-md-block bring_tofront mb-3" id="ir_aprod">
-          <a href="paginas/product.html" class="text-decoration-none">
-            <h2 class="txt_title text-uppercase ">Camperas y Abrigos</h2>
-            <p class=" p ">PARA EL INVIERNO Y LA PRIMAVERA</p>
-          </a>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <img src="imagenes/carrusel3.jpg" class="d-block w-100" alt="carousel3">
-        <div class="carousel-caption d-none  d-sm-block d-md-block bring_tofront mb-3 mt-3">
-          <h2 class="txt_title text-uppercase">Encontra tu estilo</h2>
-          <p class=" p">SENTITE VOS MISMO</p>
-        </div>
-      </div>
-
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div> -->
-  <!-------------------------------------------------------TEXT-CONTENT-IMGS --------------------------------------------------------->
-  
-<div class="container-fluid px-5" id="PG1">
-    
-  <div class="row">
-    <div class="col-12 d-lg-none">
-      <p class="txt-anim mt-3 bg-warning bg-gradient text-uppercase">Aut viam inveniam aut faciam</p>
-    </div>
+  <div class="container-fluid mt-5">
+    <h1 class="txt-title-banner text text-center">Non videmus manicae quod in tergo est</h1>
   </div>
-<!--DESKTOP-->
-<div class="d-none d-lg-block mt-4 ">
-  <div class="row d-flex justify-content-center" >
 
-    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto.png"   alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product-Title</h6></a></button></div>
-    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto_2.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product-Title</h6></a></button></div>
-    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto_3.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product Title</h6></a></button></div>
-    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto_4.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product Title</h6></a></button></div>
-    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto_9.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product Title</h6></a></button></div>
-    
-  </div>
-</div>
-<!--TABLET AND MOBILE LANDSCAPE-->
-<div class="d-none d-md-block d-lg-none">
-  <div class="row d-flex justify-content-center">
-    <div class="col-3"><button class="btn_galery txt-prod"><a href="#sec1" class="text-decoration-none"><img src="imagenes/Ojota_Producto.png" class="img-fluid img-thumbnail" alt="ojota"></a>  <h6 class="pt-3">Product-Title</h6></button></div>
-    <div class="col-3"><button class="btn_galery txt-prod"><a href="#sec2" class="text-decoration-none"><img src="imagenes/Ojota_Producto_2.png" class="img-fluid img-thumbnail" alt="ojota"></a><h6 class="pt-3">Product Title</h6></button></div>
-    <div class="col-3"><button class="btn_galery txt-prod"><a href="#sec3" class="text-decoration-none"><img src="imagenes/Ojota_Producto_3.png" class="img-fluid img-thumbnail" alt="ojota"></a><h6 class="pt-3">Product Title</h6></button></div>
-    <div class="col-3"><button class="btn_galery txt-prod"><a href="#sec4" class="text-decoration-none"><img src="imagenes/Ojota_Producto_4.png" class="img-fluid img-thumbnail" alt="ojota"></a><h6 class="pt-3">Product Title</h6></button></div>
-  </div>
-</div>
-
-
-<!--MOBILE PORTRAIT-->
-<div class=" d-md-none ">
-  <div class="row d-flex justify-content-center ">
-    <div class="col-4 px-1"><button class="btn_galery"><a href="#sec1" class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="text-center     txt-prod mt-2">Product Title</h6></a></button></div>
-    <div class="col-4 px-1"><button class="btn_galery"><a href="#sec2" class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto_2.png"   alt="ojota" class="img-fluid img-thumbnail"><h6 class="text-center txt-prod mt-2">Product Title</h6></a></button></div>
-    <div class="col-4 px-1"><button class="btn_galery"><a href="#sec3" class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto_3.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="text-center   txt-prod mt-2">Product Title</h6></a></button></div>
-  </div>
+  <div class="container mt-4">
+   <div class="row">
+     <div class="col me-3"><img src="imagenes/ts-v.jpg"       alt="remera"  class="img-fluid shadow-lg"><a href="paginas/product.html" class="text-decoration-none"><h2 class="txt-title text-end  me-4 hot">Hot</h2> </a></div>
+     <div class="col "><img src="imagenes/pullover-v.jpg" alt="pulover" class="img-fluid shadow-lg">    <a href="paginas/product.html" class="text-decoration-none"><h2 class="txt-title text-end me-4 cold">Cold</h2></a></div>
+   </dcold
   </div>
 
 
-</div>
-  <script>
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("PG1");
-    var btns = header.getElementsByClassName("btn_galery");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active_p");
-      if (current.length > 0) { 
-        current[0].className = current[0].className.replace(" active_p", "");
-        
-      }
-      this.className += " active_p";
-     
-    });
-    }
-   
-     
-    </script>
-  
-    
-
-
-<!-------------------------------------------IR A PRODUCTOS O A TU DISEÑO-->
-    <div class="col-12 d-lg-none d-flex justify-content-around mt-5">
-      <div class="col-5 d-flex justify-content-center"><button type="button" class="btn btn-warning text-uppercase "><a href="paginas/product.html" class=" btn_txt_midpage text-decoration-none btn_txt">Elige tu estilo</a></button></div>
-      <div class="col-5 d-flex justify-content-center"><button type="button" class="btn btn-danger text-uppercase "><a href="paginas/product.html"   class="btn_txt_midpage text-decoration-none btn_txt">Crea tu estilo</a></button></div>
-
-
-    </div>
-    
-
-    <!------- MOBILE LANDSCAPE Y TABLET-->
-
-    
 
     <div class="container-fluid px-5 my-5">
-      <div>
-        <p class="txt-norm ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reprehenderit voluptates officiis itaque magnam repellendus quia voluptas nesciunt eius, cupiditate facere nihil quae, assumenda quod magni vero consequatur dolor tempora?
-        Sint autem non dignissimos odio libero doloremque nihil praesentium delectus in. Officiis non fugit ducimus quibusdam. Tempora dolore quasi eveniet minima non fuga ut consequatur incidunt perferendis! Aliquid, pariatur saepe.
-        Praesentium voluptatibus sint repellendus, nisi minima iusto repudiandae architecto exercitationem reiciendis temporibus facere, laboriosam officia cupiditate reprehenderit totam harum cumque officiis libero adipisci numquam itaque voluptatem magnam! Delectus, nulla voluptatum.
-        Atque at nisi iste ea minima amet eaque earum alias doloribus excepturi magnam sapiente cum, repudiandae voluptatem quod rem dignissimos ad sit eos necessitatibus, accusantium est libero quae corrupti? Repellat!</p>
-      </div>
+      
       <p class="txt-norm d-none d-lg-block">
 
       </p>
@@ -288,9 +180,7 @@
       </div>
       <div class="col-3 d-none d-md-block txt-norm txt-anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque corrupti nihil cumque explicabo neque commodi voluptatem architecto totam fuga alias. Distinctio molestias recusandae soluta eaque rerum</div>
     </div>
-    <div class="row">
-      <div class="col-12"><p class="txt-img p-2 text-uppercase text-center txt-anim">Hoc non pereo habebo fortior me</p></div>
-    </div>
+   
     </div>
 
 <section id="sec1" class="bg-rose pt-5">

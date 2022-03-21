@@ -1,0 +1,61 @@
+<div class="container-fluid px-5" id="PG1">
+    
+  <div class="row">
+    <div class="col-12 d-lg-none">
+      <p class="txt-anim mt-3 bg-warning bg-gradient text-uppercase">Aut viam inveniam aut faciam</p>
+    </div>
+  </div>
+<!--DESKTOP-->
+<div class="d-none d-lg-block mt-4 ">
+  <div class="row d-flex justify-content-center" >
+
+    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto.png"   alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product-Title</h6></a></button></div>
+    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto_2.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product-Title</h6></a></button></div>
+    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto_3.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product Title</h6></a></button></div>
+    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto_4.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product Title</h6></a></button></div>
+    <div class="col"><button class="btn_galery txt-prod"><a href="#" class="text-decoration-none" target=""><img src="imagenes/Ojota_Producto_9.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="pt-3 txt-prod">Product Title</h6></a></button></div>
+    
+  </div>
+</div>
+<!--TABLET AND MOBILE LANDSCAPE-->
+<div class="d-none d-md-block d-lg-none">
+  <div class="row d-flex justify-content-center">
+    <div class="col-3"><button class="btn_galery txt-prod"><a href="#sec1" class="text-decoration-none"><img src="imagenes/Ojota_Producto.png" class="img-fluid img-thumbnail" alt="ojota"></a>  <h6 class="pt-3">Product-Title</h6></button></div>
+    <div class="col-3"><button class="btn_galery txt-prod"><a href="#sec2" class="text-decoration-none"><img src="imagenes/Ojota_Producto_2.png" class="img-fluid img-thumbnail" alt="ojota"></a><h6 class="pt-3">Product Title</h6></button></div>
+    <div class="col-3"><button class="btn_galery txt-prod"><a href="#sec3" class="text-decoration-none"><img src="imagenes/Ojota_Producto_3.png" class="img-fluid img-thumbnail" alt="ojota"></a><h6 class="pt-3">Product Title</h6></button></div>
+    <div class="col-3"><button class="btn_galery txt-prod"><a href="#sec4" class="text-decoration-none"><img src="imagenes/Ojota_Producto_4.png" class="img-fluid img-thumbnail" alt="ojota"></a><h6 class="pt-3">Product Title</h6></button></div>
+  </div>
+</div>
+
+
+<!--MOBILE PORTRAIT-->
+<div class=" d-md-none ">
+  <div class="row d-flex justify-content-center ">
+    <div class="col-4 px-1"><button class="btn_galery"><a href="#sec1" class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="text-center     txt-prod mt-2">Product Title</h6></a></button></div>
+    <div class="col-4 px-1"><button class="btn_galery"><a href="#sec2" class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto_2.png"   alt="ojota" class="img-fluid img-thumbnail"><h6 class="text-center txt-prod mt-2">Product Title</h6></a></button></div>
+    <div class="col-4 px-1"><button class="btn_galery"><a href="#sec3" class="text-decoration-none txt-prod"><img src="imagenes/Ojota_Producto_3.png" alt="ojota" class="img-fluid img-thumbnail"><h6 class="text-center   txt-prod mt-2">Product Title</h6></a></button></div>
+  </div>
+  </div>
+
+
+</div>
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("PG1");
+    var btns = header.getElementsByClassName("btn_galery");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active_p");
+      if (current.length > 0) { 
+        current[0].className = current[0].className.replace(" active_p", "");
+        
+      }
+      this.className += " active_p";
+     
+    });
+    }
+   
+     
+    </script>
+  
+    

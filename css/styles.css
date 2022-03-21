@@ -1,6 +1,6 @@
 /*COLORS*/
-/*BACKGROUND*/
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&family=Righteous&family=Scheherazade+New&family=Yaldevi:wght@200;500&display=swap");
 .bg-header {
   background-color: black;
   animation: aparecer 500ms ease-in-out; }
@@ -33,9 +33,16 @@
 /* TXT */
 .txt-title, .txt-title-s {
   color: black;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 600;
   font-family: "Righteous"; }
+
+.txt-title-banner {
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Righteous";
+  margin: 40px 0 30px; }
 
 .txt-title-s {
   font-size: 17px; }
@@ -72,6 +79,27 @@
   text-align: justify;
   color: black;
   font-size: 14px; }
+
+.txt-banner {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: 'Markazi Text', serif;
+  margin-bottom: 60px;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 5px 20px;
+  margin-right: 20px;
+  border: 2px #f4f6f6 solid; }
+  .txt-banner:hover {
+    color: #ffffff;
+    border: none;
+    background-color: #302f2f; }
+
+.hot:hover {
+  color: #e74c3c; }
+
+.cold:hover {
+  color: #3399ff; }
 
 /* BUTTONS */
 .btn_social_footer {
@@ -139,7 +167,6 @@
   color: white;
   border-radius: 50%; }
 
-/*FONTS*/
 /* ELEMENTS */
 * {
   padding: 0;
@@ -150,6 +177,7 @@ html {
 
 body {
   margin-bottom: 0px;
+  font-family: 'Righteous', sans-serif;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -312,6 +340,8 @@ hr {
 
 /* MQWERYS*/
 @media screen and (min-width: 1024px) {
+  .txt-title-banner {
+    font-size: 80px; }
   .img_header {
     max-width: 150px; }
   .img-prod {
