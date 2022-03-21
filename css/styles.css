@@ -29,6 +29,10 @@
 .black {
   background-color: black; }
 
+.blacko {
+  background-color: black;
+  opacity: 0.5; }
+
 /*MIXIN & SASS*/
 /* TXT */
 .txt-title, .txt-title-s {
