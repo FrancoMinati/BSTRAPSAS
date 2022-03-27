@@ -33,23 +33,37 @@
   background-color: black;
   opacity: 0.5; }
 
-/*MIXIN & SASS*/
+/*COLOR*/
+.red {
+  color: red; }
+
+.yellow {
+  color: yellow; }
+
+.blue {
+  color: blue; }
+
+.green {
+  color: green; }
+
+.orange {
+  color: orange; }
+
+.pink {
+  color: pink; }
+
 /* TXT */
+/*MIXIN & SASS*/
 .txt-title, .txt-title-s {
   color: black;
-  font-size: 40px;
   font-weight: 600;
   font-family: "Righteous"; }
 
 .txt-title-banner {
   color: black;
-  font-size: 40px;
   font-weight: 600;
   font-family: "Righteous";
   margin: 40px 0 30px; }
-
-.txt-title-s {
-  font-size: 20px; }
 
 .txt-img {
   color: black;
@@ -113,6 +127,15 @@
   font-size: 2rem;
   font-weight: bold; }
   .btn_social_footer:hover {
+    color: #e74c3c; }
+
+.btn_black {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold; }
+  .btn_black:hover {
     color: #e74c3c; }
 
 .btn_txt {
@@ -188,8 +211,7 @@ body {
   min-height: 100%; }
 
 hr {
-  margin-top: 30px;
-  color: #ffffff; }
+  margin-top: 30px; }
 
 /* DISPLAY */
 .d-500-none {
@@ -200,7 +222,8 @@ hr {
 
 /* UTILITIES */
 .divider {
-  width: 80%; }
+  width: 80%;
+  color: #ffffff; }
 
 .agrandar {
   width: 100%; }

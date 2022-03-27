@@ -55,15 +55,12 @@ $bg-gray:#302f2f;
   background-color:$color-base;
   opacity: 0.5;
 }
-/*MIXIN & SASS*/
-
-@mixin txt-title {
-  color: $color-base;
-  font-size: $txt-title;
-  font-weight: $txt-bold;
-  font-family: $font-title;
+/*COLOR*/ 
+@each $color in (red,yellow,blue,green,orange,pink) {
+  &.#{$color} {
+    color: $color;
+}	
 }
-
 /* TXT */
 $txt-title: 40px;
 $txt-title-secondary: 14px;
@@ -71,6 +68,14 @@ $txt-base: 14px;
 $txt-btn: 2rem;
 $txt-bold: 600;
 $font-title: "Righteous";
+
+/*MIXIN & SASS*/
+
+@mixin txt-title {
+  color: $color-base;
+  font-weight: $txt-bold;
+  font-family: $font-title;
+}
 
 .txt-title {
   @include txt-title();
@@ -82,7 +87,7 @@ $font-title: "Righteous";
 }
 .txt-title-s {
   @extend .txt-title;
-  font-size: 20px;
+
 }
 .txt{
   &-img {
@@ -156,6 +161,17 @@ $font-title: "Righteous";
     color: $color-hover;
   }
 }
+.btn_black {
+  background: transparent;
+  border: none;
+  color: $color-base;
+  font-size: $txt-btn;
+  font-weight: bold;
+  &:hover {
+    color: $color-hover;
+  }
+}
+
 .btn_txt {
   color: $color-text-white;
   font-size: $txt-btn;
@@ -239,7 +255,7 @@ body {
 
 hr {
   margin-top: 30px;
-  color: $color-text-white;
+  
 }
 
 /* DISPLAY */
@@ -253,6 +269,7 @@ hr {
 /* UTILITIES */
 .divider {
   width: 80%;
+  color: $color-text-white;
 }
 .agrandar {
   width: 100%;

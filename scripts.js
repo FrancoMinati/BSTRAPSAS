@@ -54,4 +54,26 @@
     }
     })();
     }
-  
+  // function mostrar_ocultar(id){
+  //   if(document.getElementById(id).style.display=='none'){
+  //     mostrar(id);
+  //   }else{
+  //     ocultar(id);
+  //   }
+  //   (function fade() {
+  //     let val = parseFloat(document.getElementById(id).style.opacity);
+  //     // cambiando el valor 0.01 se puede afectar la velocidad del efecto
+  //     if (!((val += 0.017) > 1)) { 
+  //       document.getElementById(id).style.opacity = val;
+  //       requestAnimationFrame(fade);
+  //     }
+  //     })();
+  // }
+function mostrar_ocultar(){
+  $(document).ready(function()
+		{
+		$("#prod").click(function () {	 
+			$('#productos').toggle();
+			});
+    });
+}

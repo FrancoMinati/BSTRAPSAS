@@ -22,7 +22,8 @@
 
 
   <header id="page_init" class="mb-5">
-   
+    <img src="../imagenes/sunset-h.jpg" alt="sunset-h" class="d-none d-md-block img-fluid w-100">
+    <img src="../imagenes/sunset-h-mobile.jpg" alt="sunset-h" class="d-md-none img-fluid w-100">
     <!----------------------------------DESKTOP-->
     <nav class="navbar navbar-dark fixed-top" id="menu">
       <div class="container-fluid ">
@@ -147,9 +148,82 @@
 
     </nav>
   </header>
+  <div class="container-fluid">
+    <a class="text-decoration-none btn_black" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+      aria-controls="offcanvasExample">
+      <i class="ms-4 bi bi-filter"></i>
+    </a>
+
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtrar por</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body border-top">
+
+        <div class="row d-flex flex-column ">
+          <div class="col">
+            <button class="btn_black  w-100" onclick="mostrar_ocultar('talles')">
+              <h6 class="d-flex justify-content-between">Talle<i class="ms-2 bi bi-chevron-compact-down"></i></h6>
+            </button>
+            <div class="row ">
+              <div class="list-group " id="talles" >
+                <a href="#" class="list-group-item border-0 list-group-item-action">S</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action">M</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action">L</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action">XL</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action">XXL</a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="col">
+            <button class="btn_black w-100" onclick="mostrar_ocultar('colores')">
+              <h6 class="d-flex justify-content-between">Colores<i class="ms-2 bi bi-chevron-compact-down"></i></h6>
+            </button>
+            <div class="row ">
+              <div class="list-group " id="colores">
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Rojo <i class="bi bi-square-fill red"></i></a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Negro<i class="bi bi-square-fill"></i></a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Verde<i class="bi bi-square-fill green"></i></a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Azul <i class="bi bi-square-fill blue"></i></a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Rosa<i class="bi bi-square-fill pink"></i></a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Amarrillo<i class="bi bi-square-fill yellow"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="col">
+            <button class="btn_black w-100" id="prod">
+              <h6 class=" d-flex justify-content-between" >Productos<i class="ms-2 bi bi-chevron-compact-down"></i></h6>
+            </button>
+            <div class="row ">
+              <div class="list-group " id="productos">
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Remeras</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Buzos</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Camperas</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Zapatillas </a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Bermudas </a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Pantalones</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Flops</a>
+                <a href="#" class="list-group-item border-0 list-group-item-action d-flex justify-content-between">Accesorios</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--cosas a mostrar-->
 
 
-  
+        <!--fin del body oofcanvas-->
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -163,7 +237,9 @@
   <footer class="footer">
     <div class="container-fluid ">
       <div class="row ">
-        <div class="col d-flex justify-content-center"><a href="#page_init" class="text-decoration-none text-center"><i class="bi bi-arrow-up-circle-fill btn_return"></i></a></div>
+        <div class="col d-flex justify-content-center"><a href="#page_init" class="text-decoration-none text-center"><i
+              class="bi bi-arrow-up-circle-fill btn_return"></i></a>
+        </div>
       </div>
       <div class="row d-flex justify-content-center pe-2">
         <div class="col-3">
@@ -185,35 +261,39 @@
       <div class="row mt-2  d-flex justify-content-center">
         <div class="col-2 text-center">
           <button class="btn "><a class="text-decoration-none " href=""><i
-          class="bi bi-whatsapp btn_social_footer"></i></a></button>
+                class="bi bi-whatsapp btn_social_footer"></i></a></button>
         </div>
         <div class="col-2 text-center">
           <button class="btn "><a class="text-decoration-none" href=""><i
-            class="bi bi-facebook btn_social_footer"></i></a></button>
+                class="bi bi-facebook btn_social_footer"></i></a></button>
         </div>
         <div class="col-2 text-center">
           <button class="btn "><a class="text-decoration-none " href=""><i
-            class="bi bi-instagram btn_social_footer"></i></a></button>
+                class="bi bi-instagram btn_social_footer"></i></a></button>
         </div>
-        
-       
+
+
       </div>
       <div class="row mt-2  d-flex justify-content-center">
-        <div class="col-2 text-center" ><button class="btn "><a href="mailto:francominati2@gmail.com?Subject=Contacto%20con%20Franco%20pagina%20web"class=" text-decoration-none" target="_blank">
-          <i class="bi bi-envelope btn_social_footer"></i></a></button>
-         </div>
+        <div class="col-2 text-center"><button class="btn "><a
+              href="mailto:francominati2@gmail.com?Subject=Contacto%20con%20Franco%20pagina%20web"
+              class=" text-decoration-none" target="_blank">
+              <i class="bi bi-envelope btn_social_footer"></i></a></button>
+        </div>
         <div class="col-2 text-center">
-         <button class="btn "> <a href="https://github.com/FrancoMinati" target="_blank" class="text-decoration-none">
-           <i class="bi bi-github btn_social_footer"></i></a></button>
-       </div>
-       <div class="col-2 text-center">
-        <button class="btn "><a class="text-decoration-none " href=""><i
-          class="bi bi-twitter  btn_social_footer"></i></a></button>
-      </div>
+          <button class="btn "> <a href="https://github.com/FrancoMinati" target="_blank" class="text-decoration-none">
+              <i class="bi bi-github btn_social_footer"></i></a></button>
+        </div>
+        <div class="col-2 text-center">
+          <button class="btn "><a class="text-decoration-none " href=""><i
+                class="bi bi-twitter  btn_social_footer"></i></a></button>
+        </div>
       </div>
       <div class="row mt-5">
         <div class="col">
-         <p class="footer_text-copyright text-center">Copyright&copy; 2021 - Página creada por Franco Minati - Todos los derechos reservados</p>
+          <p class="footer_text-copyright text-center">Copyright&copy; 2021 - Página creada por Franco Minati -
+            Todos
+            los derechos reservados</p>
         </div>
       </div>
     </div>
