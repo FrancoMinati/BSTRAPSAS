@@ -52,6 +52,15 @@
 .pink {
   color: pink; }
 
+.gray {
+  color: gray; }
+
+.lightgray {
+  color: lightgray; }
+
+.darkgray {
+  color: darkgray; }
+
 /* TXT */
 /*MIXIN & SASS*/
 .txt-title, .txt-title-s {
@@ -124,7 +133,7 @@
 /* BUTTONS */
 .btn_social_footer {
   color: black;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold; }
   .btn_social_footer:hover {
     color: #e74c3c; }
@@ -133,14 +142,14 @@
   background: transparent;
   border: none;
   color: black;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold; }
   .btn_black:hover {
     color: #e74c3c; }
 
 .btn_txt {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold; }
   .btn_txt_midpage {
     font-family: "Righteous", cursive;
@@ -151,7 +160,7 @@
 
 .btn_nav {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   border: none;
   background: none;
   cursor: pointer; }
@@ -167,7 +176,7 @@
 
 .btn_social {
   color: white;
-  font-size: 2rem;
+  font-size: 1.7rem;
   border-radius: 50%;
   padding: 8px;
   text-align: center;
@@ -295,9 +304,8 @@ hr {
   z-index: 1200; }
 
 .p {
-  color: black;
   background: none;
-  font-size: 13px; }
+  font-size: 14px; }
 
 .flip-flops:hover {
   background: linear-gradient(#a50000, #ff8616);
