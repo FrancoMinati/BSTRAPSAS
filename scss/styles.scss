@@ -216,7 +216,7 @@ $font-title: "Righteous";
 .btn_galery {
   outline: none;
   background-color:$color-select-secondary;
-  padding: 10px 16px;
+  padding: 10px 8px;
   width: 100%;
   cursor: pointer;
   border: 0.5px $color-border solid;
@@ -360,7 +360,7 @@ hr {
 
 
 .p {
-  
+  text-align: justify;
   background: none;
   font-size:$txt-base;
 }
@@ -536,7 +536,7 @@ hr {
     border-radius: 80px;
   }
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 500px) {
   .d-500-none {
     display: none;
   }
