@@ -10,26 +10,26 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!--CSS-->
-  <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../../css/styles.css">
   <!----FONTS-->
 
   <!---->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <title>Flip Flopinn | Diseña tu flop</title>
+  <title>Flip Flopinn | Prod xxxx</title>
 </head>
 
-<body class="bg-sun">
-
+<body class="">
 
   <header id="page_init" >
    
+   <div class="espaciador"></div>
     <!----------------------------------DESKTOP-->
     <nav class="navbar navbar-dark fixed-top" id="menu">
       <div class="container-fluid ">
         <!--MOBILE Y TABLET-->
         <button class="btn_nav d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
           aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" onclick="black('menu')">
-          <span><i class="ms-4 bi bi-list btn_nav"></i></span>
+          <span><i class="ms-4 bi bi-list btn_nav blacko" id="barras-nav"></i></span>
         </button>
         <div class="collapse navbar-collapse d-md-none black " id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3">
@@ -72,7 +72,7 @@
 
         <button class="btn_nav d-none d-md-block" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span><i class="ms-4 bi bi-list btn_nav"></i></span>
+          <span><i class="ms-4 bi bi-list btn_nav black" id="barras-nav2"></i></span>
         </button>
         <a class="navbar-brand" href="../../index.html"><img src="../../imagenes/logo.png" class="img-fluid img-header"></a>
         <!---------------------------------OFF CANVAS ------------------------------------------------------------>
@@ -148,11 +148,235 @@
     </nav>
   </header>
   <!--TABLET Y DESKTOP-->
+<!--Mobile hasta 768-->
+  <div class="container  mt-5 d-md-none">
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+       <img src="../../imagenes/ojota_p (1).jpg" alt="prod" class="img-fluid pt-3 px-4 mb-5">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col px-4">
+        <h1 class=" my-3">Product Name XXXX</h1>
+       
+        <ul class="list-unstyled">
+          <li><h6 class=" mt-2">Caracteristica x</h6></li>
+          <li class="p gray">Lipsam voluptate tenetur!</li>
+          <li><h6 class=" mt-2">Caracteristica x</h6></li>
+          <li class="p gray">Lorem ipsum quasi vitae maiores ipsum deleniti aperiam eius minus.</li>
+          <li><h6 class="mt-2">Valor Unitario: $$$$</h6></li>
+        </ul>
+    
+  <div id="botones-talle">
+    <h6 >Talles:</h6>
+     <div class="row">
+       <div class="col d-flex justify-content-start flex-wrap">
+        <button class="btn_talles mt-2 me-2">37</button>
+        <button class="btn_talles mt-2 me-2">38</button>
+        <button class="btn_talles mt-2 me-2">39</button>
+        <button class="btn_talles mt-2 me-2">40</button>
+        <button class="btn_talles mt-2 me-2">41</button>
+        <button class="btn_talles mt-2 me-2">42</button>
+        <button class="btn_talles mt-2 me-2">43</button>
+        <button class="btn_talles mt-2 me-2">44</button>
+        <button class="btn_talles mt-2 me-2">45</button>
+       </div>
+     </div>
+  </div>
 
-<div class="container d-flex justify-content-center">
-  <h1 class="txt-title">
-    PROXIMAMENTE
-  </h1>
+
+  <h6 class=" border-bottom border-secondary mt-2 pb-2">Calcular envio</h6>
+  <div class="input-group input-group-sm mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Calcular envío</span>
+    <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Codigo Postal">
+  </div>
+  <input class="btn_white-rounded mt-4 w-100" type="button" value="Comprar">
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="espaciador"></div>
+      <div class="col">
+        <h4 class="border-bottom pb-3">Otros productos</h4>
+      </div>
+    </div>
+    <div class="container shadow-lg  my-3 "><a href="" class="text-decoration-none cblack">
+    <div class="row">
+      <div class="col d-flex justify-content-center mt-3">
+       <img src="../../imagenes/ojota_p (4).jpg" alt="prod" class="img-fluid pt-3 px-4 mb-5">
+      </div>
+    </div>
+    <div class="row">
+    <div class="col">
+      <h6 class="p my-2 ">PRODUCTO XXXX</h6>
+          <div class="d-flex justify-content-between align-items-end">
+            <p class="p gray lh-1">price: $ xxxx</p>
+            <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+          </div>
+        <p class="p darkgray lh-1">Envio xxxx</p>
+    </div>
+    </div></a>
+    </div>
+    <div class="container shadow-lg  my-3 "><a href="" class="text-decoration-none cblack">
+      <div class="row">
+        <div class="col d-flex justify-content-center mt-3">
+         <img src="../../imagenes/ojota_p (3).jpg" alt="prod" class="img-fluid pt-3 px-4 mb-5">
+        </div>
+      </div>
+      <div class="row">
+      <div class="col">
+        <h6 class="p my-2 ">PRODUCTO XXXX</h6>
+            <div class="d-flex justify-content-between align-items-end">
+              <p class="p gray lh-1">price: $ xxxx</p>
+              <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+            </div>
+          <p class="p darkgray lh-1">Envio xxxx</p>
+      </div>
+      </div></a>
+      </div>
+      <div class="container shadow-lg  my-3 "><a href="" class="text-decoration-none cblack">
+        <div class="row">
+          <div class="col d-flex justify-content-center mt-3">
+           <img src="../../imagenes/ojota_p (2).jpg" alt="prod" class="img-fluid pt-3 px-4 mb-5">
+          </div>
+        </div>
+        <div class="row">
+        <div class="col">
+          <h6 class="p my-2 ">PRODUCTO XXXX</h6>
+              <div class="d-flex justify-content-between align-items-end">
+                <p class="p gray lh-1">price: $ xxxx</p>
+                <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+              </div>
+            <p class="p darkgray lh-1">Envio xxxx</p>
+        </div>
+        </div></a>
+        </div>
+  </div>
+
+
+<div class="container d-none d-md-block mt-5">
+  <div class="row">
+    <div class="col"><img src="../../imagenes/ojota_p (1).jpg" alt="prod" class="img-fluid px-4 mt-3"></div>
+    <div class="col">
+      <h1 class=" mb-3">Product Name XXXX</h1>
+       
+        <ul class="list-unstyled">
+          <li><h6 class=" mt-2">Caracteristica x</h6></li>
+          <li class="p gray">Lipsam voluptate tenetur!</li>
+          <li><h6 class=" mt-2">Caracteristica x</h6></li>
+          <li class="p gray">Lorem ipsum quasi vitae maiores ipsum deleniti aperiam eius minus.</li>
+          <li><h6 class="mt-2">Valor Unitario: $$$$</h6></li>
+        </ul>
+    
+  <div id="botones-talle">
+    <h6 >Talles:</h6>
+     <div class="row">
+       <div class="col d-flex justify-content-start flex-wrap">
+        <button class="btn_talles mt-2 me-2">37</button>
+        <button class="btn_talles mt-2 me-2">38</button>
+        <button class="btn_talles mt-2 me-2">39</button>
+        <button class="btn_talles mt-2 me-2">40</button>
+        <button class="btn_talles mt-2 me-2">41</button>
+        <button class="btn_talles mt-2 me-2">42</button>
+        <button class="btn_talles mt-2 me-2">43</button>
+        <button class="btn_talles mt-2 me-2">44</button>
+        <button class="btn_talles mt-2 me-2">45</button>
+       </div>
+     </div>
+  </div>
+
+
+ 
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col">
+      <h6 class=" border-bottom border-secondary my-4 pb-2">Calcular envio</h6>
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Calcular envío</span>
+        <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Codigo Postal">
+      </div>
+      <input class="btn_white-rounded mt-4 w-100" type="button" value="Comprar">
+    </div>
+  </div>
+</div>
+<div class="container d-none d-md-block d-lg-none  ">
+  <h4 class="border-bottom pb-3 mt-5">Otros productos</h4>
+  <div class="row px-2 my-2 pt-3  ">
+    <div class="col shadow-sm d-flex flex-column justify-content-center me-4">
+      <img src="../../imagenes/ojota_p (4).jpg" alt="ojotap" class="img-fluid shadow-sm">
+      <h6 class="txt-prod my-2 ">PRODUCTO XXXX</h6>
+      <div class="d-flex justify-content-between align-items-end">
+        <p class="p gray lh-1">price: $ xxxx</p>
+        <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+      </div>
+      <p class="p darkgray lh-1">Envio xxxx</p>
+    </div>
+  
+    <div class="col shadow-sm d-flex flex-column justify-content-center me-4">
+      <img src="../../imagenes/thongs-flip-flop.jpg" alt="ojotap" class="img-fluid shadow-sm">
+      <h6 class="txt-prod my-2 ">PRODUCTO XXXX</h6>
+        <div class="d-flex justify-content-between align-items-end">
+          <p class="p gray lh-1">price: $ xxxx</p>
+          <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+        </div>
+      <p class="p darkgray lh-1">Envio xxxx</p>
+    </div>
+
+    <div class="col shadow-sm d-flex flex-column justify-content-center ">
+      <img src="../../imagenes/ojota_p (2).jpg" alt="ojotap" class="img-fluid shadow-sm">
+      <h6 class="txt-prod my-2 ">PRODUCTO XXXX</h6>
+      <div class="d-flex justify-content-between align-items-end">
+        <p class="p gray lh-1">price: $ xxxx</p>
+        <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+      </div>
+      <p class="p darkgray lh-1">Envio xxxx</p>
+    </div>
+  </div>
+</div>
+
+<div class="container d-none d-lg-block border-top ">
+  <h4 class="border-bottom pb-3 mt-5">Otros productos</h4>
+  <div class="row px-2 my-2 pt-3  ">
+    <div class="col shadow-sm d-flex flex-column justify-content-center me-4">
+      <img src="../../imagenes/black-sh-prod.jpg" alt="ojotap" class="img-fluid shadow-sm">
+      <h6 class="txt-prod my-2 ">PRODUCTO XXXX</h6>
+      <div class="d-flex justify-content-between align-items-end">
+        <p class="p gray lh-1">price: $ xxxx</p>
+        <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+      </div>
+      <p class="p darkgray lh-1">Envio xxxx</p>
+    </div>
+  
+    <div class="col shadow-sm d-flex flex-column justify-content-center">
+      <img src="../../imagenes/thongs-flip-flop.jpg" alt="ojotap" class="img-fluid shadow-sm">
+      <h6 class="txt-prod my-2 ">PRODUCTO XXXX</h6>
+        <div class="d-flex justify-content-between align-items-end">
+          <p class="p gray lh-1">price: $ xxxx</p>
+          <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+        </div>
+      <p class="p darkgray lh-1">Envio xxxx</p>
+    </div>
+
+    <div class="col shadow-sm d-flex flex-column justify-content-center me-4">
+      <img src="../../imagenes/ojota_p (2).jpg" alt="ojotap" class="img-fluid shadow-sm">
+      <h6 class="txt-prod my-2 ">PRODUCTO XXXX</h6>
+      <div class="d-flex justify-content-between align-items-end">
+        <p class="p gray lh-1">price: $ xxxx</p>
+        <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+      </div>
+      <p class="p darkgray lh-1">Envio xxxx</p>
+    </div>
+  
+    <div class="col shadow-sm d-flex flex-column justify-content-center">
+      <img src="../../imagenes/ojota_p (3).jpg" alt="ojotap" class="img-fluid shadow-sm">
+      <h6 class="txt-prod my-2 ">PRODUCTO XXXX</h6>
+        <div class="d-flex justify-content-between align-items-end">
+          <p class="p gray lh-1">price: $ xxxx</p>
+          <button class="btn_black "><i class=" bi bi-cart-plus "></i></button>
+        </div>
+      <p class="p darkgray lh-1">Envio xxxx</p>
+    </div>
+  </div>
 </div>
   <!--MOBILE-->
 
@@ -177,48 +401,48 @@
           </a>
         </div>
         <div class="col-3"><a href="../your_design.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Tu diseño</p>
+            <p class="footer_text ">Tu diseño</p>
           </a></div>
         <div class="col-3"><a href="../contact.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Contacto</p>
+            <p class="footer_text ">Contacto</p>
           </a></div>
         <div class="col-3"><a href="../us.html" class="txt-norm text-decoration-none">
-            <p class="footer_text">Nosotros</p>
+            <p class="footer_text ">Nosotros</p>
         </div>
         </a>
       </div>
       <div class="row mt-2  d-flex justify-content-center">
         <div class="col-2 text-center">
           <button class="btn "><a class="text-decoration-none " href=""><i
-          class="bi bi-whatsapp btn_social_footer"></i></a></button>
+          class="bi bi-whatsapp btn_social_footer btn_black"></i></a></button>
         </div>
         <div class="col-2 text-center">
           <button class="btn "><a class="text-decoration-none" href=""><i
-            class="bi bi-facebook btn_social_footer"></i></a></button>
+            class="bi bi-facebook btn_social_footer  btn_black"></i></a></button>
         </div>
         <div class="col-2 text-center">
           <button class="btn "><a class="text-decoration-none " href=""><i
-            class="bi bi-instagram btn_social_footer"></i></a></button>
+            class="bi bi-instagram btn_social_footer  btn_black"></i></a></button>
         </div>
         
        
       </div>
       <div class="row mt-2  d-flex justify-content-center">
         <div class="col-2 text-center" ><button class="btn "><a href="mailto:francominati2@gmail.com?Subject=Contacto%20con%20Franco%20pagina%20web"class=" text-decoration-none" target="_blank">
-          <i class="bi bi-envelope btn_social_footer"></i></a></button>
+          <i class="bi bi-envelope btn_social_footer  btn_black"></i></a></button>
          </div>
         <div class="col-2 text-center">
          <button class="btn "> <a href="https://github.com/FrancoMinati" target="_blank" class="text-decoration-none">
-           <i class="bi bi-github btn_social_footer"></i></a></button>
+           <i class="bi bi-github btn_social_footer  btn_black"></i></a></button>
        </div>
        <div class="col-2 text-center">
         <button class="btn "><a class="text-decoration-none " href=""><i
-          class="bi bi-twitter  btn_social_footer"></i></a></button>
+          class="bi bi-twitter  btn_social_footer  btn_black"></i></a></button>
       </div>
       </div>
       <div class="row mt-5">
         <div class="col">
-         <p class="footer_text-copyright text-center">Copyright&copy; 2021 - Página creada por Franco Minati - Todos los derechos reservados</p>
+         <p class="footer_text-copyright text-center ">Copyright&copy; 2021 - Página creada por Franco Minati - Todos los derechos reservados</p>
         </div>
       </div>
     </div>

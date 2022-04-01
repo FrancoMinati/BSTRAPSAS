@@ -26,9 +26,16 @@ $bg-gray:#302f2f;
   background-color: $bg-black;
   animation: aparecer 500ms ease-in-out;
 }
-
+.bg-header-w{
+  background-color:white;
+  box-shadow:  0 0.35rem 1.2rem #c7c7c7;;
+  animation: aparecer 500ms ease-in-out;
+}
 .no-bg-sm{
   background-color: $bg-black;
+}
+.bg-white{
+  background-color: white;
 }
 .bg-rose {
   background-color: $bg-rose;
@@ -52,14 +59,17 @@ $bg-gray:#302f2f;
   background-color: $color-base;
 }
 .blacko{
-  background-color:$color-base;
-  opacity: 0.5;
+  color: black;;
+  
 }
 /*COLOR*/ 
-@each $color in (red,yellow,blue,green,orange,pink,gray,lightgray,darkgray) {
+@each $color in (red,yellow,blue,green,orange,pink,gray,lightgray,darkgray,white) {
   &.#{$color} {
     color: $color;
 }	
+}
+.cblack{
+  color: black;
 }
 /* TXT */
 $txt-title: 40px;
@@ -72,7 +82,7 @@ $font-title: "Righteous";
 /*MIXIN & SASS*/
 
 @mixin txt-title {
-  color: $color-base;
+  
   font-weight: $txt-bold;
   font-family: $font-title;
 }
@@ -161,6 +171,20 @@ $font-title: "Righteous";
     color: $color-hover;
   }
 }
+.btn_talles{
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+  &:hover{
+    background-color: $color-hover;
+  }
+}
+.active_talles{
+  background-color: $color-hover;
+}
 .btn_black {
   background: transparent;
   border: none;
@@ -180,6 +204,13 @@ $font-title: "Righteous";
   &:hover {
     color: $color-hover;
   }
+  &-rounded{
+    color: white;
+    background-color:$color-hover;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+  }
 }
 .btn_txt {
   color: $color-text-white;
@@ -196,7 +227,7 @@ $font-title: "Righteous";
 }
 
 .btn_nav {
-  color: $color-text-white;
+  
   font-size: $txt-btn;
   border: none;
   background: none;
@@ -283,7 +314,9 @@ hr {
 .agrandar {
   width: 100%;
 }
-
+.espaciador{
+  height: 50px;
+}
 .bring_tofront {
   z-index: 120;
   opacity: 0.7;
@@ -317,7 +350,7 @@ hr {
   align-items: center;
   
   &_text {
-    color: $txt-base;
+    
     font-size: 16px;
     flex-grow: 1;
     text-align: center;
@@ -494,6 +527,9 @@ hr {
 @media screen and (min-width: 768px) {
   .txt-prod{
     font-size:17px ;
+  }
+  .espaciador{
+    height: 150px;
   }
   .txt-norm{
   font-size: 17px;}

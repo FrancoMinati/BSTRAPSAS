@@ -2,8 +2,12 @@
     $(window).scroll(function () {
       if ($("#menu").offset().top > 30) {
         $("#menu").addClass("bg-header");
+        $('#barras-nav').addClass("white");
+        $('#barras-nav2').addClass("white");
       } else {
         $("#menu").removeClass("bg-header");
+        $('#barras-nav').removeClass("white");
+        $('#barras-nav2').removeClass("white");
       }
     });
 
@@ -14,11 +18,16 @@
         $("#menu").addClass("nobg");
       } else {
         $("#menu").removeClass("nobg");
+        
 
       }
     });
- 
 
+   
+
+
+  
+   
   
     // Add active class to the current button (highlight it)
     var header = document.getElementById("PG1");
@@ -69,3 +78,14 @@
       }
       })();
   }
+  var header = document.getElementById("botones-talle");
+var btns = header.getElementsByClassName("btn_talles");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active_talles");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active_talles", "");
+  }
+  this.className += " active_talles";
+  });
+}

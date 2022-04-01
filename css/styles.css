@@ -5,8 +5,16 @@
   background-color: black;
   animation: aparecer 500ms ease-in-out; }
 
+.bg-header-w {
+  background-color: white;
+  box-shadow: 0 0.35rem 1.2rem #c7c7c7;
+  animation: aparecer 500ms ease-in-out; }
+
 .no-bg-sm {
   background-color: black; }
+
+.bg-white {
+  background-color: white; }
 
 .bg-rose {
   background-color: #ff0066; }
@@ -30,8 +38,7 @@
   background-color: black; }
 
 .blacko {
-  background-color: black;
-  opacity: 0.5; }
+  color: black; }
 
 /*COLOR*/
 .red {
@@ -61,15 +68,19 @@
 .darkgray {
   color: darkgray; }
 
+.white {
+  color: white; }
+
+.cblack {
+  color: black; }
+
 /* TXT */
 /*MIXIN & SASS*/
 .txt-title, .txt-title-s {
-  color: black;
   font-weight: 600;
   font-family: "Righteous"; }
 
 .txt-title-banner {
-  color: black;
   font-weight: 600;
   font-family: "Righteous";
   margin: 40px 0 30px; }
@@ -138,6 +149,19 @@
   .btn_social_footer:hover {
     color: #e74c3c; }
 
+.btn_talles {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px; }
+  .btn_talles:hover {
+    background-color: #e74c3c; }
+
+.active_talles {
+  background-color: #e74c3c; }
+
 .btn_black {
   background: transparent;
   border: none;
@@ -155,6 +179,12 @@
   font-weight: bold; }
   .btn_white:hover {
     color: #e74c3c; }
+  .btn_white-rounded {
+    color: white;
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    border: none;
+    outline: none; }
 
 .btn_txt {
   color: #ffffff;
@@ -168,7 +198,6 @@
       color: #ffffff; }
 
 .btn_nav {
-  color: #ffffff;
   font-size: 1.7rem;
   border: none;
   background: none;
@@ -246,6 +275,9 @@ hr {
 .agrandar {
   width: 100%; }
 
+.espaciador {
+  height: 50px; }
+
 .bring_tofront {
   z-index: 120;
   opacity: 0.7;
@@ -274,7 +306,6 @@ hr {
   flex-flow: row nowrap;
   align-items: center; }
   .footer_text {
-    color: 14px;
     font-size: 16px;
     flex-grow: 1;
     text-align: center;
@@ -404,6 +435,8 @@ hr {
 @media screen and (min-width: 768px) {
   .txt-prod {
     font-size: 17px; }
+  .espaciador {
+    height: 150px; }
   .txt-norm {
     font-size: 17px; }
   .btn_return {
