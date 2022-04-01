@@ -171,7 +171,16 @@ $font-title: "Righteous";
     color: $color-hover;
   }
 }
-
+.btn_white {
+  background: transparent;
+  border: none;
+  color: $color-text-white;
+  font-size: $txt-btn;
+  font-weight: bold;
+  &:hover {
+    color: $color-hover;
+  }
+}
 .btn_txt {
   color: $color-text-white;
   font-size: $txt-btn;
